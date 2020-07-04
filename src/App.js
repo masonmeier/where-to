@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import Question1 from './components/pages/questions/question1';
 import Question2 from './components/pages/questions/question2';
-// import Error from './components/pages/error';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/ BottomTriangle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/Signature.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/Title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/Topbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/startSignature.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/question1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/question1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593820304376</updated>
-      <workItem from="1593820307842" duration="7199000" />
+      <workItem from="1593820307842" duration="7915000" />
     </task>
     <servers />
   </component>

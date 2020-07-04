@@ -1,6 +1,9 @@
 import React, { useRef, useContext } from 'react';
 import {QuizContext} from '../../QuizProvider';
 import { useHistory } from "react-router-dom";
+import Signature from '../../Structure/Signature';
+import Topbar from '../../Structure/Topbar';
+import Title from '../../Structure/Title';
 
 function Question1(props) {
   const quizContext = useContext(QuizContext);
@@ -15,11 +18,15 @@ function Question1(props) {
 
     return (
         <div className="slideContainer">
-          <h1>Question 1</h1>
-          <input type="range" id="slider1" ref={q1Slider} />
-          <button className="next" onClick={nextQuestion}>
-            Next
-          </button>
+          <Topbar />
+          <Title />
+          <div className="questionContainer">
+            <input type="range" id="slider1" ref={q1Slider} />
+            <button className="next" onClick={nextQuestion}>
+              Next
+            </button>
+          </div>
+          <Signature />
         </div>
       );
 }
