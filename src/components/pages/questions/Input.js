@@ -2,7 +2,7 @@ import React, { useRef, useContext } from 'react';
 import {QuizContext} from '../../QuizProvider';
 import { useHistory } from "react-router-dom";
 
-function Question1(props) {
+function UserInput(props) {
   const quizContext = useContext(QuizContext);
   const qSlider = useRef(null);
   const history = useHistory();
@@ -19,10 +19,10 @@ function Question1(props) {
 
   return (
     <div className="inputContainer">
-        <input type="range" id={inputId} ref={qSlider} />
+        <input type="range" ref={qSlider} />
         <button onClick={nextQuestion}>Next</button>
     </div>
   );
 }
 
-export default Question1;
+export default UserInput;

@@ -4,8 +4,11 @@ import Question1 from './components/pages/questions/question1';
 import Question2 from './components/pages/questions/question2';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
+import QuizStructure from './components/pages/questions/Input'
+import QuestionStructure from './components/pages/questions/QuestionStructure';
 
 function App() {
+
   const routes = [
     {
       path: '/',
@@ -13,20 +16,25 @@ function App() {
     },
     {
       path: '/questions',
-      component: questionStructure,
-    }
+      component: QuestionStructure,
+    },
   ];
-return (
 
-<BrowserRouter>
-  <QuizProvider>
-    <Route path='/' component={LandingPage} exact />
-    <Route path='/q1' component={Question1}/>
-    <Route path='/q2' component={Question2}/>
+  const routeComponents = routes.map(({path, component}, key) =>
+      <Route
+        exact path={path}
+        component={component}
+        key={key}
+      />
+    );
 
-  </QuizProvider>
-</BrowserRouter>
-)
+  return (
+    <BrowserRouter>
+      <QuizProvider>
+        {routeComponents}
+      </QuizProvider>
+    </BrowserRouter>
+  )
 }
 
 export default App;

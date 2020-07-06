@@ -7,7 +7,11 @@ class QuizProvider extends Component {
     answerValues: [],
 
     //questionValues is the stored text for all of the questions we are rendering
-    questionValues: []
+    questionValues: [
+      "Your moms buck teeth",
+      "stevie wonders drivers licence",
+      "Dogs are soft"
+    ]
   };
 
   //setQval pushes the user answer to the state array answervalues
