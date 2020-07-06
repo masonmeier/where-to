@@ -3,39 +3,22 @@ import Question1 from './pages/questions/question1';
 
 class QuizProvider extends Component {
   state = {
-    question1Val: '',
-    question2Val: '',
-    question3Val: '',
-    question4Val: '',
-    question5Val: '',
-    question6Val: '',
-    question7Val: '',
-    question8Val: '',
-    question9Val: '',
-    question10Val: '',
-    question11Val: '',
-    question12Val: '',
-    question13Val: '',
-    question14Val: '',
-    question15Val: '',
-    question16Val: '',
-    question17Val: '',
-    question18Val: '',
+    //answerValues is where the inputs from the user will be stored
+    answerValues: [],
+
+    //questionValues is the stored text for all of the questions we are rendering
+    questionValues: []
   };
 
-  setQ1Val = (q1Val) => {
-    this.setState({question1Val: q1Val}, () => {
-      console.log( "q1 Val", this.state.question1Val);
-  });
-  };
+  //setQval pushes the user answer to the state array answervalues
 
-  setQ2Val = (q2Val) => {
-    this.setState({question2Val: q2Val}, () => {
-      console.log("q2 Val", this.state.question2Val);
+  setQVal = (qVal) => {
+    const answerVal = this.state.answerValues;
+    answerVal.push(qVal);
+    this.setState({answerValues: answerVal}, () => {
+      console.log( "qVal", this.state);
     });
   };
-
-
 
   render() {
     return (

@@ -6,6 +6,16 @@ import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 
 function App() {
+  const routes = [
+    {
+      path: '/',
+      component: LandingPage,
+    },
+    {
+      path: '/questions',
+      component: questionStructure,
+    }
+  ];
 return (
 
 <BrowserRouter>

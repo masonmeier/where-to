@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/pages/questions/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/question1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/question1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593820304376</updated>
-      <workItem from="1593820307842" duration="7915000" />
+      <workItem from="1593820307842" duration="8076000" />
+      <workItem from="1593990134981" duration="599000" />
+      <workItem from="1594061791605" duration="660000" />
+      <workItem from="1594062478003" duration="5809000" />
     </task>
     <servers />
   </component>
@@ -61,5 +65,20 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1593827065266" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594068298714">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594068298714" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../Code/Unfinished Projects/Where-to/where-to-app/where-to-client/src/Pages/Questions/QuestionStructure.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
