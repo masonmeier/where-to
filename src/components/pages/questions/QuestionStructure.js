@@ -4,6 +4,7 @@ import Signature from '../../Structure/Signature';
 import Topbar from '../../Structure/Topbar';
 import Title from '../../Structure/Title';
 import UserInput from './Input';
+import QuestionBody from './QuestionBody';
 
 function QuestionStructure(props) {
   const quizContext = useContext(QuizContext);
@@ -13,8 +14,8 @@ function QuestionStructure(props) {
       <Topbar />
       <Title />
       <div className="questionContainer">
-        {/*<QuestionBody />*/}
-        <UserInput />
+        <QuestionBody history={props.history}/>
+        <UserInput history={props.history}/>
       </div>
       <Signature />
     </div>

@@ -1,11 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import Question1 from './components/pages/questions/question1';
-import Question2 from './components/pages/questions/question2';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
-import QuizStructure from './components/pages/questions/Input'
 import QuestionStructure from './components/pages/questions/QuestionStructure';
+import ResultsPage from './components/pages/ResultsPage';
 
 function App() {
 
@@ -18,6 +16,10 @@ function App() {
       path: '/questions',
       component: QuestionStructure,
     },
+    {
+      path: '/results',
+      component: ResultsPage,
+    }
   ];
 
   const routeComponents = routes.map(({path, component}, key) =>
