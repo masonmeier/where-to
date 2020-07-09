@@ -4,6 +4,7 @@ import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
 import ResultsPage from './components/pages/ResultsPage';
+import UserInput from './components/pages/questions/Input';
 
 function App() {
 
@@ -19,6 +20,10 @@ function App() {
     {
       path: '/results',
       component: ResultsPage,
+    },
+    {
+      path: '/input',
+      component: UserInput,
     }
   ];
 

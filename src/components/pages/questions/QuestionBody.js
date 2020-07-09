@@ -6,13 +6,12 @@ import { useHistory } from "react-router-dom";
 function QuestionBody(props) {
   const quizContext = useContext(QuizContext);
   const questionNumber = quizContext.getCurrentQuestionNum();
-  const questionText = quizContext.getCurrentQuestionInfo();
-  console.log("question body context", questionNumber);
+  const questionObj = quizContext.getCurrentQuestionObj();
 
   return (
     <div className="questionBody">
       <h2>Question {questionNumber+1}</h2>
-      <p>{questionText.text}</p>
+      <p>{questionObj.text}</p>
     </div>
   );
 }

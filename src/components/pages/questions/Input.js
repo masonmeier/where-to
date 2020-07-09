@@ -4,15 +4,15 @@ import {QuizContext} from '../../QuizProvider';
 
 function UserInput(props) {
   const quizContext = useContext(QuizContext);
-  const qSlider = useRef(null);
-
+  const inputRef = useRef(null);
+  const questionObj = quizContext.getCurrentQuestionObj();
+  console.log("input sanity check", questionObj);
 
   //when nextQuestion is called we are setting qVal as the current slider value of the input as a number 1-100
   //We are then calling setQVal and using that to push qVal to the answerValues array in quizContext
   //Then we will change the quiz question body value to the next value in the questionValues array
   const nextQuestion = () => {
-    const qVal = qSlider.current.valueAsNumber;
-    console.log("quiz context", quizContext);
+    const qVal = inputRef.current.valueAsNumber;
     quizContext.setQVal(qVal);
     quizContext.setQBody();
     if (quizContext.getCurrentQuestionNum() >= quizContext.numberOfQuestions-1){
@@ -20,10 +20,10 @@ function UserInput(props) {
     }
     };
 
-
+  console.log("input and ref check", questionObj);
   return (
     <div className="inputContainer">
-        <input type="range" ref={qSlider} />
+        <input type={questionObj.inputType} ref={inputRef} />
         <button className="next" onClick={nextQuestion}>Next</button>
     </div>
   );
