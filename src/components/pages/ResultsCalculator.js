@@ -6,56 +6,81 @@ function ResultsCalculator(props) {
   const quizContext = useContext(QuizContext);
   const userAnswers = quizContext.answerValues;
   const countriesArray = quizContext.countriesArray;
-  // const cDataISO = countryData.map(a => a.iso);
-  // const cDataCountry = countryData.map(a => a.country);
-  // const cDatagdp_pc = countryData.map(a => a.gdp_pc);
-  // const cDatagpi = countryData.map(a => a.gpi_rank);
-  // const cDataPNR = countryData.map(a => a.percentage_non_religious);
-  // const cDataHapScor = countryData.map(a => a.happiness_score);
-  // const cDataTop100U = countryData.map(a => a.top_100_universities);
-  // const cDataColComp = countryData.map(a => a.collegiate_completion_rate_top_);
-  // const cDataHiComp = countryData.map(a => a.high_school_completion_rate);
-  // const cDataTopEd = countryData.map(a => a.top_rated_overall_education);
-  // const cDataSpiceyFood = countryData.map(a => a.spiciest_food);
-  // const cDataComNat = countryData.map(a => a.communist_nation);
-  // const cDataMostTemp = countryData.map(a => a.most_temperate_nations);
-  // const cDataColdest = countryData.map(a => a.coldest_nations);
-  // const cDataBestBeach = countryData.map(a => a.best_beaches);
-  // const cDataEcFree = countryData.map(a => a.high_economic_freedom);
-  // const cDataBestHealth = countryData.map(a => a.best_health_care);
-  // const cDataBestInternet = countryData.map(a => a.best_internet_infrastructure);
-  // const cDataHighestDensity = countryData.map(a => a.highest_pop_density);
-  // const cDataLeastCor = countryData.map(a => a.least_corrupt);
 
-  // console.log('countriesArray check', countriesArray);
-  // const minRange = 30000;
-  // const maxRange = 60000;
+  const GDPminRange = 0;
+  const GDPmaxRange = 60000;
+
+  const GPIminRange = 40;
+  const GPImaxRange = 160;
+
+  const countryScores = {};
+  
+
+  /**
+   * converts a slider percentage 0-100 to a corresponding value in the table
+   * @param percentValFromUser from the user
+   * @param minValFromTable from the table
+   * @param maxValFromTable from the table
+   */
+  function convertPercentToScore(percentValFromUser, minValFromTable, maxValFromTable) {
+    return (maxValFromTable - minValFromTable) * (percentValFromUser / 100) + minValFromTable;
+    // 0 + 300
+    // (62100 - 300) + 300
+    /*
+      0 => 300
+      100 => 62100
+    */
+  }
+
+  function addResult(countryName) {
+    if (countryScores.hasOwnProperty(countryName)) {
+      countryScores[countryName]++;
+    } else {
+      countryScores[countryName] = 1;
+    }
+  }
+
+  userAnswers.forEach(function (item, index) {
+    console.log('userAnswers Sanity check', index, item);
+  });
 
 
-  // function setGDPPCRange(countries, minimumRange, maximumRange) {
-  //   return countries.gdp_pc >= minRange && countries.gdp_pc <= maxRange;
-  // }
+  //gdp logic
+  function setGDPPCRange(gdppcNum, minRange, maxRange) {
+    return gdppcNum >= minRange && gdppcNum <= maxRange;
+  }
 
-  // const gdppcResult = countriesArray.filter(function (cData) {
-  //   return setGDPPCRange(countriesArray.gdp_pc, minRange, maxRange);
-  // });
+  const gdppcResult = countriesArray.filter(function (cData) {
+    // console.log('cData check', cData.gdp_pc);
+    return setGDPPCRange(cData.gdp_pc, GDPminRange, GDPmaxRange);
+  });
 
-  // console.log('gdp result check', gdppcResult);
+  const addGDPPCResult = gdppcResult.forEach(function (country) {
+    addResult(country.country);
+  });
+
+  console.log('GDPPC sanity Check', countryScores);
 
 
-  // console.log('compare gdp', gdppcResult);
+  // gpi logic
+  function setGPIRange(gpiNum, minRange, maxRange) {
+    return gpiNum >= minRange && gpiNum <= maxRange;
+  }
 
-  // countriesArray.forEach(function (item, index) {
-  //   console.log('country data sanity check', item, index);
-  // });
+  const GPIResult = countriesArray.filter(function (cData) {
+    return setGPIRange(cData.gpi_rank, GPIminRange, GPImaxRange);
+  });
 
-  // userAnswers.forEach(function (item, index) {
-  //   console.log('userAnswers Sanity check', index, item);
-  // });
+  const addGPIResult = GPIResult.forEach(function (country) {
+    addResult(country.country);
+  });
+
+  console.log('GPI sanity check', countryScores);
+
 
   return (
     <div>
-      your mom
+      results calculator dummy text
     </div>
   );
 

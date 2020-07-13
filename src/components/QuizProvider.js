@@ -12,7 +12,7 @@ class QuizProvider extends Component {
       setQVal: this.setQVal,
       setQBody: this.setQBody,
       getUserAnswers: this.getUserAnswers,
-      
+
       //answerValues is where the inputs from the user will be stored
       answerValues: [],
 
@@ -153,17 +153,6 @@ class QuizProvider extends Component {
     return (
       <QuizContext.Provider
         value={this.state}
-        // value={{
-        //
-        //   getCurrentQuestionNum: this.getCurrentQuestionNum,
-        //   getCurrentQuestionObj: this.getCurrentQuestionObj,
-        //   setQVal: this.setQVal,
-        //   setQBody: this.setQBody,
-        //   numberOfQuestions: this.state.questionValues.length,
-        //   getUserAnswers: this.getUserAnswers,
-        //   answerValues: this.state.answerValues,
-        //   countriesArray: this.state.countriesArray,
-        // }}
       >
         {this.props.children}
       </QuizContext.Provider>

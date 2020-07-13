@@ -6,7 +6,7 @@ function ResultsPage(props) {
 
   return (
     <div className="questionBody">
-      <h1>Your moms buck teeth</h1>
+      <h1>Results page text</h1>
       <ResultsCalculator/>
     </div>
   );

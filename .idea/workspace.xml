@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch/arrayFilterTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SQLDatabase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/startSignature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/startSignature.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/Input.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,9 @@
       <workItem from="1594246044693" duration="7110000" />
       <workItem from="1594253257116" duration="9265000" />
       <workItem from="1594293657513" duration="11934000" />
-      <workItem from="1594334337146" duration="10926000" />
+      <workItem from="1594334337146" duration="13566000" />
+      <workItem from="1594415044916" duration="11689000" />
+      <workItem from="1594661226831" duration="3726000" />
     </task>
     <servers />
   </component>
