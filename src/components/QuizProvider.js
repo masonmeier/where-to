@@ -25,7 +25,8 @@ class QuizProvider extends Component {
           inputReference: 'qSlider',
           leftVal: 'Not Important',
           rightVal: 'Very Important',
-          className: 'sliderInput'
+          className: 'sliderInput',
+          value: 50,
         },
         {
           text: 'It is important to me that the government I live under values peace above all things.',
@@ -34,7 +35,8 @@ class QuizProvider extends Component {
           inputReference: 'qSlider',
           leftVal: 'Not Important',
           rightVal: 'Very Important',
-          className: 'sliderInput'
+          className: 'sliderInput',
+          value: 50,
         },
         {
           text: 'It is important that I live in a nation with as few religious people as possible.',
@@ -43,7 +45,8 @@ class QuizProvider extends Component {
           inputReference: 'qSlider',
           leftVal: 'Not Important',
           rightVal: 'Very Important',
-          className: 'sliderInput'
+          className: 'sliderInput',
+          value: 50,
         },
         {
           text: 'I want everyone around me to be as happy as possible.',
@@ -52,7 +55,8 @@ class QuizProvider extends Component {
           inputReference: 'qSlider',
           leftVal: 'Not Important',
           rightVal: 'Very Important',
-          className: 'sliderInput'
+          className: 'sliderInput',
+          value: 50,
         },
 
       ],

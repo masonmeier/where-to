@@ -1,88 +1,101 @@
 import React, {useContext} from 'react';
 import {QuizContext} from '../QuizProvider';
-import CountryData from '../../SQLDatabase';
+import getCountryData from '../../SQLDatabase';
 
 function ResultsCalculator(props) {
-  const quizContext = useContext(QuizContext);
-  const userAnswers = quizContext.answerValues;
-  const countriesArray = quizContext.countriesArray;
+    const [countriesArray, setCountriesArray] = React.useState([]);
+    const [loading, setLoading] = React.useState(true);
+    const [error, setError] = React.useState(false);
+    const [result, setResult] = React.useState(null);
 
-  const GDPminRange = 0;
-  const GDPmaxRange = 60000;
+    const quizContext = useContext(QuizContext);
 
-  const GPIminRange = 40;
-  const GPImaxRange = 160;
+    React.useEffect(() => {
+        // get sql data on component mount
+        getCountryData()
+            .then(countryData => setCountriesArray(countryData))
+            .catch(err => setError(err))
+            .finally(() => setLoading(false));
+    }, []);
 
-  const countryScores = {};
-  
+    React.useEffect(() => {
+        // when quizContext or countriesArray change, re-evaluate results
+        console.log('quiz data', quizContext);
+        console.log('sql data', countriesArray);
 
-  /**
-   * converts a slider percentage 0-100 to a corresponding value in the table
-   * @param percentValFromUser from the user
-   * @param minValFromTable from the table
-   * @param maxValFromTable from the table
-   */
-  function convertPercentToScore(percentValFromUser, minValFromTable, maxValFromTable) {
-    return (maxValFromTable - minValFromTable) * (percentValFromUser / 100) + minValFromTable;
-    // 0 + 300
-    // (62100 - 300) + 300
-    /*
-      0 => 300
-      100 => 62100
-    */
-  }
+        if (countriesArray.length === 0) {
+            return; // wait for sql data
+        }
 
-  function addResult(countryName) {
-    if (countryScores.hasOwnProperty(countryName)) {
-      countryScores[countryName]++;
-    } else {
-      countryScores[countryName] = 1;
+        const {questionValues} = quizContext;
+
+        // map of country name -> country score
+        const scoreMap = new Map(countriesArray.map(countryData => [countryData.country, 0]));
+
+        // increment(n) returns another function, which takes a Country Object from sql data & increments its score
+        const increment = n => ({country}) => {
+            scoreMap.set(country, scoreMap.get(country) + n);
+        };
+
+        questionValues.forEach(({quality, value}) => {
+            // array of numeric Country Values from sql data for this question
+            const countryValues = countriesArray.map(country => country[quality]);
+            const min = Math.min(...countryValues);
+            const max = Math.max(...countryValues);
+
+            if (isNaN(min) || isNaN(max)) {
+                // data is missing for this quality, do not use it for calculations
+                console.error('missing country values for ' + quality);
+                return;
+            }
+
+            const userPreference = (value/100) * (max - min) + min;
+
+            // sort the list of Country Objects from sql data by closest-to-user-preference
+            const sortedByPreference = countriesArray.sort((a, b) => {
+                const aDiff = Math.abs(userPreference - a[quality]);
+                const bDiff = Math.abs(userPreference - b[quality]);
+                return aDiff - bDiff;
+            });
+
+            console.log('min', min, 'max', max, 'userPreference (' + value + '%)', userPreference);
+            console.log('question', quality, value);
+            console.log('sortedPreference', sortedByPreference);
+
+            // increment best match by 2
+            sortedByPreference.slice(0, 1).forEach(increment(2));
+
+            // increment next 4 best matches by 1
+            sortedByPreference.slice(1, 4).forEach(increment(1));
+        });
+
+        console.log('scores', scoreMap.keys(), scoreMap.values());
+
+        // sort the countries by highest score
+        const sortedByScore = countriesArray.sort(({country: a}, {country: b}) => {
+            return scoreMap.get(b) - scoreMap.get(a);
+        });
+
+        const resultCountryData = sortedByScore[0];
+
+        console.log('highest score', resultCountryData, scoreMap.get(resultCountryData.country));
+
+        setResult(resultCountryData);
+
+    }, [quizContext, countriesArray]);
+
+    if (loading) {
+        return <div>Loading...</div>
     }
-  }
+    else if (error) {
+        return <div>An error occurred fetching the data.</div>
+    }
 
-  userAnswers.forEach(function (item, index) {
-    console.log('userAnswers Sanity check', index, item);
-  });
-
-
-  //gdp logic
-  function setGDPPCRange(gdppcNum, minRange, maxRange) {
-    return gdppcNum >= minRange && gdppcNum <= maxRange;
-  }
-
-  const gdppcResult = countriesArray.filter(function (cData) {
-    // console.log('cData check', cData.gdp_pc);
-    return setGDPPCRange(cData.gdp_pc, GDPminRange, GDPmaxRange);
-  });
-
-  const addGDPPCResult = gdppcResult.forEach(function (country) {
-    addResult(country.country);
-  });
-
-  console.log('GDPPC sanity Check', countryScores);
-
-
-  // gpi logic
-  function setGPIRange(gpiNum, minRange, maxRange) {
-    return gpiNum >= minRange && gpiNum <= maxRange;
-  }
-
-  const GPIResult = countriesArray.filter(function (cData) {
-    return setGPIRange(cData.gpi_rank, GPIminRange, GPImaxRange);
-  });
-
-  const addGPIResult = GPIResult.forEach(function (country) {
-    addResult(country.country);
-  });
-
-  console.log('GPI sanity check', countryScores);
-
-
-  return (
-    <div>
-      results calculator dummy text
-    </div>
-  );
+    return (
+        <div>
+            Result: {result.country}! Enjoy your trip!
+        </div>
+    );
 
 }
 
