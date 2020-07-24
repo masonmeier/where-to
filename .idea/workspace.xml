@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scratch/editboi.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch/sql2boi.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewsAPICall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/questionValues.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch/arrayBreakDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/scratch/arrayBreakDown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQLDatabase.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/startSignature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/startPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
     </list>
@@ -25,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,11 +46,32 @@
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.NewsApiCall.js">
+    <configuration name="NewsApiCall.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/APICalls/NewsApiCall.js" working-dir="$PROJECT_DIR$/src/components/APICalls">
+      <method v="2" />
+    </configuration>
+    <configuration name="SQLCall.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/SQLCall.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/back-end/index.js" working-dir="$PROJECT_DIR$/back-end">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.NewsApiCall.js" />
+        <item itemvalue="Node.js.SQLCall.js" />
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,7 +92,15 @@
       <workItem from="1594293657513" duration="11934000" />
       <workItem from="1594334337146" duration="13566000" />
       <workItem from="1594415044916" duration="11689000" />
-      <workItem from="1594661226831" duration="3726000" />
+      <workItem from="1594661226831" duration="22552000" />
+      <workItem from="1594765146770" duration="3417000" />
+      <workItem from="1595029623208" duration="4179000" />
+      <workItem from="1595287522251" duration="2619000" />
+      <workItem from="1595299519340" duration="2079000" />
+      <workItem from="1595364255720" duration="1532000" />
+      <workItem from="1595373163851" duration="6740000" />
+      <workItem from="1595452294111" duration="2943000" />
+      <workItem from="1595536806732" duration="12299000" />
     </task>
     <servers />
   </component>
@@ -72,6 +112,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1593827065266" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1595030417322">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595030417322" />
+    <state width="1899" height="351" key="GridCell.Tab.0.bottom" timestamp="1595546029339">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029339" />
+    <state width="1899" height="351" key="GridCell.Tab.0.center" timestamp="1595546029338">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="351" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
+    <state width="1899" height="351" key="GridCell.Tab.0.left" timestamp="1595546029338">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="351" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
+    <state width="1899" height="351" key="GridCell.Tab.0.right" timestamp="1595546029338">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="351" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1594253289362">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -80,9 +140,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594259898428">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup" timestamp="1595543830027">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595543830027" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594259898428" />
   </component>
   <component name="XDebuggerManager">
@@ -94,9 +155,15 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/QuizProvider.js</url>
-          <line>132</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/scratch/arrayBreakDown.js</url>
+          <line>126</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/APICalls/NewsApiCall.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

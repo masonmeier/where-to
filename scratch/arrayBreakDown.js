@@ -120,7 +120,6 @@ function findMinMaxValue() {
   console.log('findMinMax Sanity Check', questionValues);
 }
 
-
 function findMinMaxForField(field) {
   const fieldMap = countriesArray.map((country) => country[field]);
   const filteredArrayMax = Math.max(...fieldMap);

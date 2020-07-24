@@ -1,21 +1,21 @@
 import React from 'react';
-import StartSignature from '../Structure/startSignature';
+import StartPage from '../Structure/startPage';
 import Title from '../Structure/Title';
 import Topbar from '../Structure/Topbar';
-import '../../App.css'
+import '../../App.css';
 
 function LandingPage() {
   return (
     <div className='landingPage'>
-      <Topbar />
-      <Title />
+      <Topbar/>
+      <Title/>
       <div id="startText">
-      <p className="infoText">
-        Take a brief, anonymous test that will help you determine what nation you would be happiest in.
-      </p>
+        <p className="infoText">
+          Take a brief, anonymous test that will help you determine what nation you would be happiest in.
+        </p>
       </div>
       <br/>
-      <StartSignature />
+      <StartPage/>
     </div>
   );
 }
