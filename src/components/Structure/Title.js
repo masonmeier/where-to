@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import '../../App.css'
+import React, {Component} from 'react';
+import '../../CSS/landingPage.css';
 
 export default class Title extends Component {
   render() {
     return (
       <div className='TitleImage'>
-        <img src={require('../images/title.png')} />
+        <img className="titleImage" alt="title" src={require('../pages/images/title.png')}/>
       </div>
     );
   }

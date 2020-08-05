@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {QuizContext} from '../QuizProvider';
 import getCountryData from '../SQLCall';
+import NewsInformation from './ResultInformation/NewsInformation';
 
 function ResultsCalculator(props) {
   const [countriesArray, setCountriesArray] = React.useState([]);
@@ -90,8 +91,10 @@ function ResultsCalculator(props) {
   }
 
   return (
-    <div>
-      Result: {result.country}, {result.iso}! Enjoy your trip!
+    <div className="resultsPage">
+      <h1>{result.country}! Enjoy your trip!</h1>
+      <h2 className="newsHeader">See what's happening in your country!</h2>
+      <NewsInformation result={result.country}/>
     </div>
   );
 

@@ -1,6 +1,12 @@
+const economic = '../images/QuestionIcons/economic.png';
+const education = '';
+const environment = '';
+const political = '';
+const social = '';
+
 const questionValues = [
   {
-    text: 'How important is it that you make as much money as possible',
+    text: 'How important is it that you make as much money as possible?',
     quality: 'gdp_pc',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -8,9 +14,10 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
-    text: 'It is important to me that the government I live under values peace above all things.',
+    text: 'It is important to you that the government you live under values peace.',
     quality: 'gpi_rank_inverse',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -18,9 +25,10 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'social',
   },
   {
-    text: 'It is important that I live in a nation with as few religious people as possible.',
+    text: 'It is important that you live in a nation with as few religious people as possible.',
     quality: 'percentage_non_religious',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -28,9 +36,10 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'social',
   },
   {
-    text: 'I want everyone around me to be as happy as possible.',
+    text: 'You want everyone you have ever met to be happy.',
     quality: 'happiness_score',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -38,9 +47,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'social',
   },
   {
-    text: 'It is important that I live where my children have access to the worlds best universities',
+    text: 'Your children must have access to the worlds most prestigious universities.',
     quality: 'top_100_universities',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -48,6 +58,7 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'education',
   },
   {
     text: 'It is important that as many people complete college as possible.',
@@ -58,6 +69,7 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'education',
   },
   {
     text: 'It is important that as many people graduate high school as possible.',
@@ -68,9 +80,10 @@ const questionValues = [
     rightVal: 'Very Important',
     className: 'sliderInput',
     value: 50,
+    visual: 'education',
   },
   {
-    text: 'The quality of education a nation can provide is very important.',
+    text: 'Education should focus on preparing you for the work force.',
     quality: 'top_rated_overall_education',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -78,9 +91,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'education',
   },
   {
-    text: 'I enjoy very spicy food.',
+    text: 'You enjoy very spicy food.',
     quality: 'spiciest_food',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -88,9 +102,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'social',
   },
   {
-    text: 'I want to live in a nation with strong anti-capitalist (or communist) representation in government.',
+    text: 'You want to live in a nation with strong socialist representation in government.',
     quality: 'communist_nation',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -98,9 +113,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
-    text: 'I want to live where it is hot.',
+    text: 'You want to live where it is hot.',
     quality: 'most_temperate_nations',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -108,9 +124,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'environment',
   },
   {
-    text: 'I want to live where it is cold.',
+    text: 'You want to live where it is cold.',
     quality: 'coldest_nations',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -118,9 +135,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'environment',
   },
   {
-    text: 'I want to live near the beach.',
+    text: 'You want to live near the beach.',
     quality: 'best_beaches',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -128,9 +146,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'environment',
   },
   {
-    text: 'I am responsible enough to determine where and when I work and how I invest my money.',
+    text: 'People are generally responsible enough to determine how their money should be used.',
     quality: 'highest_economic_freedom',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -138,9 +157,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
-    text: 'My internet connectivity needs to be....',
+    text: 'Your internet connection needs to be...',
     quality: 'best_internet_infrastructure',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -148,9 +168,10 @@ const questionValues = [
     rightVal: 'Always Reliable',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
-    text: 'I want to live somewhere with a lot of people in one place.',
+    text: 'You want to live somewhere with a lot of people in one place.',
     quality: 'high_pop_density',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -158,6 +179,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'environment',
   },
   {
     text: 'The government should buy into and subsidize the economy.',
@@ -168,6 +190,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
     text: 'The rich should be heavily taxed.',
@@ -178,6 +201,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
     text: 'The government should own property and financial assets.',
@@ -188,9 +212,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
-    text: 'I want to live somewhere with many government jobs available.',
+    text: 'The government should provide as many jobs as possible.',
     quality: 'size_of_gov',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -198,9 +223,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
-    text: 'The court system should not be influenced by politics.',
+    text: 'The court system should be impartial and un influenced by politics.',
     quality: 'judicial_independence',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -208,6 +234,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
     text: 'The military should assist in policing the population.',
@@ -218,9 +245,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
-    text: 'There needs to be regulations on property sales.',
+    text: 'The government should regulate the sale of properties.',
     quality: 'prop_sale_reg',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -228,9 +256,10 @@ const questionValues = [
     rightVal: 'More Regulation',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   },
   {
-    text: 'I want fast and effective responses from local law enforcement.',
+    text: 'Law enforcement should be a highly trained and well paid organization.',
     quality: 'police_reliability',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -238,6 +267,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
     text: 'Imports and exports need to be heavily taxed.',
@@ -248,9 +278,10 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'political',
   },
   {
-    text: 'There should be regulations determining when someone can and cannot be fired.',
+    text: 'There should be regulations determining when someone can or cannot be fired.',
     quality: 'hiring_firing_reg',
     inputType: 'range',
     inputReference: 'qSlider',
@@ -258,6 +289,7 @@ const questionValues = [
     rightVal: 'Strongly Agree',
     className: 'sliderInput',
     value: 50,
+    visual: 'economic',
   }
 ];
 export default questionValues;

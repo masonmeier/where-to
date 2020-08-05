@@ -1,0 +1,86 @@
+.getResultsHolder {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.getResultsTextHolder {
+    margin-top: 50%;
+    margin-bottom: 20%;
+}
+
+.resultsButton {
+    background-color: #53d6a6;
+    border-radius: 28px;
+    border: 1px solid #8cff98;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #bcffb2;
+}
+
+.loadingGif {
+    width: 100%;
+    margin-bottom: 50%;
+}
+
+.loadContainer {
+    background-color: #3199da;
+}
+
+.resultsPage {
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    background-color: #d2f7f5;
+}
+
+.newsContainer {
+    border-radius: 2%;
+    margin: auto;
+    width: 90%;
+    overflow: scroll;
+    border: 3px black solid;
+    height: 60vh;
+    background-color: white;
+}
+
+.relatedNews {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.newsListItem {
+    width: 40%;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-decoration: none;
+    border: black 1px solid;
+    margin-top: 3%;;
+}
+
+.newsImage {
+    width: 100%;
+}
+
+
+.articleText {
+    font-size: x-small;
+    text-decoration: none;
+    color: black;
+}
+
+.newsHeader {
+    margin-top: 10%;
+}

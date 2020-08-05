@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import {BrowserRouter, Route} from 'react-router-dom';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
 import ResultsPage from './components/pages/ResultsPage';
 import UserInput from './components/pages/questions/Input';
+
 
 function App() {
 
@@ -28,12 +29,12 @@ function App() {
   ];
 
   const routeComponents = routes.map(({path, component}, key) =>
-      <Route
-        exact path={path}
-        component={component}
-        key={key}
-      />
-    );
+    <Route
+      exact path={path}
+      component={component}
+      key={key}
+    />
+  );
 
   return (
     <BrowserRouter>
@@ -41,7 +42,7 @@ function App() {
         {routeComponents}
       </QuizProvider>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

@@ -1,6 +1,22 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import {QuizContext} from '../../QuizProvider';
-import { useHistory } from "react-router-dom";
+import {useHistory} from 'react-router-dom';
+import economic from '../images/QuestionIcons/economic.png';
+import education from '../images/QuestionIcons/education.png';
+import environment from '../images/QuestionIcons/environment.png';
+import political from '../images/QuestionIcons/political.png';
+import social from '../images/QuestionIcons/social.png';
+import '../../../CSS/questionBody.css';
+
+//images are initialized into an object to allow react to read them
+//for each re-render
+const categoryToImage = {
+  economic: economic,
+  education: education,
+  environment: environment,
+  political: political,
+  social: social,
+};
 
 
 function QuestionBody(props) {
@@ -8,10 +24,21 @@ function QuestionBody(props) {
   const questionNumber = quizContext.getCurrentQuestionNum();
   const questionObj = quizContext.getCurrentQuestionObj();
 
+
+  console.log(questionObj.visual, 'question object visual sanity check');
   return (
     <div className="questionBody">
-      <h2>Question {questionNumber+1}</h2>
-      <p>{questionObj.text}</p>
+      <div className="questionIconContainer">
+        <img className="questionIcon" alt="question icon" src={categoryToImage[questionObj.visual]}/>
+      </div>
+      <p className="questionText">{questionObj.text}</p>
+      <div className="leftInputValHolder">
+        <p>{questionObj.leftVal}</p>
+      </div>
+      <div className="rightInputValHolder">
+        <p>{questionObj.rightVal}</p>
+      </div>
+
     </div>
   );
 }

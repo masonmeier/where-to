@@ -1,7 +1,52 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import ResultsCalculator from './ResultsCalculator';
+import LoadingPage from './LoadingPage';
+import '../../CSS/resultspage.css';
+import NavBar from '../Structure/NavBar';
 
-class ResultsPage extends Component {
+export default function ResultsPage() {
+  const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const loadHandler = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setShow(!show);
+    }, 2000);
+  };
+
+  if (loading) return <LoadingPage/>;
+
+  return (
+    <div className="results">
+      <NavBar/>
+      {!show &&
+      <div className="getResultsHolder">
+        <div className="getResultsTextHolder">
+        </div>
+        <button className="resultsButton" onClick={loadHandler}>so...where to?</button>
+      </div>}
+      {show && <ResultsCalculator/>}
+      {/*{loading ? 'loading placeholder' : this.renderList(data)}*/}
+    </div>
+  );
+
+
+}
+
+
+// function ResultsPage(props) {
+//   return (
+//     <div className="questionBody">
+//       <h1>Results page text</h1>
+//       <ResultsCalculator/>
+//
+//     </div>
+//   );
+// }
+//
+
 //   constructor(props) {
 //     super(props);
 //     this.state = {
@@ -40,28 +85,4 @@ class ResultsPage extends Component {
 //     );
 //   };
 
-  render() {
-    // const {loading, data} = this.state;
-    return (
-      <div>
-        <h1>Results page text</h1>
-        <ResultsCalculator/>
-        {/*{loading ? 'loading placeholder' : this.renderList(data)}*/}
-      </div>
-    );
-  }
-
-}
-
-
-// function ResultsPage(props) {
-//   return (
-//     <div className="questionBody">
-//       <h1>Results page text</h1>
-//       <ResultsCalculator/>
-//
-//     </div>
-//   );
-// }
-//
-export default ResultsPage;
+// const {loading, data} = this.state;

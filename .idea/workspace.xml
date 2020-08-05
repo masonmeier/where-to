@@ -2,21 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch/editboi.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch/sql2boi.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewsAPICall.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/questionValues.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSS/questionBody.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CSS/resultspage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/LoadingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/images/title.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/arrayBreakDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/scratch/arrayBreakDown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLDatabase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/startSignature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/startPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewsAPICall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/ BottomTriangle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/Signature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/Topbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/startPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/title.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/questionValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questionValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +65,21 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\Structure" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\CSS" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\ResultInformation" />
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
@@ -101,6 +131,16 @@
       <workItem from="1595373163851" duration="6740000" />
       <workItem from="1595452294111" duration="2943000" />
       <workItem from="1595536806732" duration="12299000" />
+      <workItem from="1595566701437" duration="860000" />
+      <workItem from="1595624570898" duration="707000" />
+      <workItem from="1595880120314" duration="5272000" />
+      <workItem from="1595966651130" duration="4817000" />
+      <workItem from="1595971490723" duration="9027000" />
+      <workItem from="1596015324919" duration="618000" />
+      <workItem from="1596062792370" duration="1001000" />
+      <workItem from="1596139262625" duration="10369000" />
+      <workItem from="1596486096458" duration="3893000" />
+      <workItem from="1596570036801" duration="21956000" />
     </task>
     <servers />
   </component>
@@ -108,42 +148,73 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593827065266">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596576866618">
+      <screen x="1920" y="0" width="1536" height="834" />
     </state>
+    <state x="690" y="278" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1595979787048" />
+    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596576866618" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1593827065266" />
+    <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596145900042">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596145900042" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1595030417322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595030417322" />
-    <state width="1899" height="351" key="GridCell.Tab.0.bottom" timestamp="1595546029339">
+    <state width="996" height="349" key="GridCell.Tab.0.bottom" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029339" />
-    <state width="1899" height="351" key="GridCell.Tab.0.center" timestamp="1595546029338">
+    <state width="996" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
+    <state width="1515" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
+    <state width="996" height="349" key="GridCell.Tab.0.center" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="351" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state width="1899" height="351" key="GridCell.Tab.0.left" timestamp="1595546029338">
+    <state width="996" height="349" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
+    <state width="1515" height="259" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
+    <state width="996" height="349" key="GridCell.Tab.0.left" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="351" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state width="1899" height="351" key="GridCell.Tab.0.right" timestamp="1595546029338">
+    <state width="996" height="349" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
+    <state width="1515" height="259" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
+    <state width="996" height="349" key="GridCell.Tab.0.right" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="351" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state x="461" y="182" key="SettingsEditor" timestamp="1594253289362">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="996" height="349" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
+    <state width="1515" height="259" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
+    <state x="2289" y="119" key="SettingsEditor" timestamp="1596577245446">
+      <screen x="1920" y="0" width="1536" height="834" />
     </state>
+    <state x="2289" y="119" key="SettingsEditor/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577245446" />
     <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594253289362" />
+    <state x="747" y="194" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595885245603">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="747" y="194" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595885245603" />
+    <state x="953" y="0" width="974" height="1057" key="dock-window-1" timestamp="1596570566171">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2682" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596002525287" />
+    <state x="953" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596570566171" />
     <state x="489" y="167" width="627" height="568" key="find.popup" timestamp="1594345712521">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
-    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup" timestamp="1595543830027">
+    <state x="531" y="238" key="run.anything.popup" timestamp="1596587306866">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="531" y="238" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596587306866" />
+    <state x="2345" y="189" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596580150054" />
+    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup" timestamp="1596592548349">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595543830027" />
+    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596592548349" />
+    <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577857110" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594259898428" />
   </component>
   <component name="XDebuggerManager">
@@ -162,7 +233,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/APICalls/NewsApiCall.js</url>
           <line>1</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
