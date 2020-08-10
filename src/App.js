@@ -5,6 +5,8 @@ import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
 import ResultsPage from './components/pages/ResultsPage';
 import UserInput from './components/pages/questions/Input';
+import ResultsPageNews from './components/pages/ResultsPageNews';
+import ResultsCalculator from './components/pages/ResultsCalculator';
 
 
 function App() {
@@ -20,8 +22,20 @@ function App() {
     },
     {
       path: '/results',
-      component: ResultsPage,
+      component: ResultsCalculator,
     },
+    {
+      path: '/results/news',
+      component: ResultsPageNews,
+    },
+    // {
+    //   path: '/results/weather',
+    //   component: ResultPageWeather,
+    // },
+    // {
+    //   path: '/',
+    //   component: ResultsPageImmigration
+    // },
     {
       path: '/input',
       component: UserInput,
@@ -33,6 +47,7 @@ function App() {
       exact path={path}
       component={component}
       key={key}
+
     />
   );
 

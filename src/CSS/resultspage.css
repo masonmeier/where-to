@@ -32,6 +32,15 @@
     background-color: #3199da;
 }
 
+.flagHolder {
+    width: 100%;
+    height: 100%
+}
+
+.flag {
+    width: 100%;
+}
+
 .resultsPage {
     width: 100vw;
     text-align: center;

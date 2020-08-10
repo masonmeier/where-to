@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import {QuizContext} from '../QuizProvider';
 import getCountryData from '../SQLCall';
 import NewsInformation from './ResultInformation/NewsInformation';
+import ResultNavBar from '../Structure/ResultNavBar';
+import ResultsPage from './ResultsPage';
 
 function ResultsCalculator(props) {
   const [countriesArray, setCountriesArray] = React.useState([]);
@@ -9,6 +11,7 @@ function ResultsCalculator(props) {
   const [error, setError] = React.useState(false);
   const [result, setResult] = React.useState(null);
   const quizContext = useContext(QuizContext);
+  console.log(result, 'result check');
 
   React.useEffect(() => {
     // get sql data on component mount
@@ -90,14 +93,12 @@ function ResultsCalculator(props) {
     return <div>An error occurred fetching the data.</div>;
   }
 
+
   return (
     <div className="resultsPage">
-      <h1>{result.country}! Enjoy your trip!</h1>
-      <h2 className="newsHeader">See what's happening in your country!</h2>
-      <NewsInformation result={result.country}/>
+      <ResultsPage result={result}/>
     </div>
   );
-
 }
 
 

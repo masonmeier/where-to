@@ -3,10 +3,14 @@ import ResultsCalculator from './ResultsCalculator';
 import LoadingPage from './LoadingPage';
 import '../../CSS/resultspage.css';
 import NavBar from '../Structure/NavBar';
+import ResultsPageNews from './ResultsPageNews';
+import ResultsPageStats from './ResultsPageStats';
 
-export default function ResultsPage() {
+const ResultsPage = (props) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
+  const result = props.result;
+  console.log(props.result.iso2, 'ResultPage Check');
 
   const loadHandler = () => {
     setLoading(true);
@@ -27,13 +31,12 @@ export default function ResultsPage() {
         </div>
         <button className="resultsButton" onClick={loadHandler}>so...where to?</button>
       </div>}
-      {show && <ResultsCalculator/>}
+      {show && <ResultsPageStats result={result}/>}
       {/*{loading ? 'loading placeholder' : this.renderList(data)}*/}
     </div>
   );
-
-
-}
+};
+export default ResultsPage;
 
 
 // function ResultsPage(props) {
