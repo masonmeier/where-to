@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch/countryCodes.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/resultspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultspage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,7 @@
       <workItem from="1596139262625" duration="10369000" />
       <workItem from="1596486096458" duration="3893000" />
       <workItem from="1596570036801" duration="21956000" />
-      <workItem from="1597090029086" duration="7069000" />
+      <workItem from="1597090029086" duration="8884000" />
     </task>
     <servers />
   </component>
@@ -173,10 +168,10 @@
     </state>
     <state x="2682" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596002525287" />
     <state x="953" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596570566171" />
-    <state x="54" y="157" width="627" height="568" key="find.popup" timestamp="1597096384913">
+    <state x="54" y="157" width="1150" height="759" key="find.popup" timestamp="1597097759184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="54" y="157" width="627" height="568" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597096384913" />
+    <state x="54" y="157" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597097759184" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
       <screen x="1920" y="0" width="1536" height="834" />
