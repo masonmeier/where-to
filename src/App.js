@@ -7,6 +7,7 @@ import ResultsPage from './components/pages/ResultsPage';
 import UserInput from './components/pages/questions/Input';
 import ResultsPageNews from './components/pages/ResultsPageNews';
 import ResultsCalculator from './components/pages/ResultsCalculator';
+import ResultsPageStats from './components/pages/ResultsPageStats';
 
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
     {
       path: '/results',
       component: ResultsCalculator,
+    },
+    {
+      path: '/results/stats',
+      component: ResultsPageStats,
     },
     {
       path: '/results/news',

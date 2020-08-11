@@ -13,6 +13,7 @@ class QuizProvider extends Component {
       setQVal: this.setQVal,
       setQBody: this.setQBody,
       getUserAnswers: this.getUserAnswers,
+      updateProviderResult: this.updateProviderResult,
 
       //answerValues is where the inputs from the user will be stored
       answerValues: [],
@@ -21,9 +22,14 @@ class QuizProvider extends Component {
       questionValues,
 
       currentQuestionIndex: 0,
+      resultCountry: null,
     };
   }
 
+  updateProviderResult = (countryObject) => {
+    //this function takes in the country object and saves it to provider state
+    this.setState({resultCountry: countryObject});
+  };
   //add a thing that allows us to compare peoples current country to their desired country.
 
 

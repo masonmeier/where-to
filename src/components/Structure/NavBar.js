@@ -10,13 +10,13 @@ export default class NavBar extends Component {
       <div className='navBar'>
         <Dropdown className="dropdown">
           <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
+            Menu
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            <Dropdown.Item href="#/action-1">Restart</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">About the Author</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">LinkedIn</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>

@@ -83,6 +83,7 @@ function ResultsCalculator(props) {
 
     console.log('highest score', resultCountryData, scoreMap.get(resultCountryData.country));
 
+    quizContext.updateProviderResult(resultCountryData);
     setResult(resultCountryData);
 
   }, [quizContext, countriesArray]);

@@ -1,16 +1,18 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import ResultsCalculator from './ResultsCalculator';
 import LoadingPage from './LoadingPage';
 import '../../CSS/resultspage.css';
 import NavBar from '../Structure/NavBar';
 import ResultsPageNews from './ResultsPageNews';
 import ResultsPageStats from './ResultsPageStats';
+import {QuizContext} from '../QuizProvider';
 
 const ResultsPage = (props) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
   const result = props.result;
-  console.log(props.result.iso2, 'ResultPage Check');
+  const quizContext = useContext(QuizContext);
+  console.log(quizContext.resultCountry.iso2, 'ResultPage Check');
 
   const loadHandler = () => {
     setLoading(true);

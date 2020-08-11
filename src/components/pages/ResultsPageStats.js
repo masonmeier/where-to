@@ -256,7 +256,6 @@ const flagImages = {
 
 const ResultsPageStats = (props) => {
   const result = props.result;
-  console.log(props.result.iso2, 'iso 2 sanity check');
   return (
     <div>
       <ResultNavBar/>
