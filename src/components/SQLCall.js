@@ -16,17 +16,18 @@ export default function getCountryData() {
   });
 
    */
-  const CountryData = fetch('http://localhost:3002')
-    .then(res => res.json())
-    .then(
-      (result) => {
-        console.log('countryData sanity check', result);
-        return result;
-      },
-      (error) => {
-        throw error;
-      }
-    );
+  const CountryData =
+    fetch('http://localhost:3002')
+      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log('countryData sanity check', result);
+          return result;
+        },
+        (error) => {
+          throw error;
+        }
+      );
   // return Promise.resolve(CountryData);
   return CountryData;
 };

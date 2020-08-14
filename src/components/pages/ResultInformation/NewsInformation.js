@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import LoadingPage from '../LoadingPage';
 
 class NewsInformation extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class NewsInformation extends Component {
     };
   }
 
-//look into promise.all for multiple fetch requests
+//look into promise.all for multiple
+// fetch requests
   componentDidMount() {
     const country = this.props.result;
     fetch('http://localhost:3002/news?q=' + country)
@@ -36,7 +38,7 @@ class NewsInformation extends Component {
           {data.articles.map(item => (
             console.log('item sanity check', item),
               <li className="newsListItem" key={item.url}>
-                <a className="articleText" href={item.url}>
+                <a className="articleText" href={item.url} target="_blank">
                   {item.title}
                 </a>
                 <img className="newsImage" src={item.urlToImage}/>
@@ -52,7 +54,7 @@ class NewsInformation extends Component {
     return (
 
       <div>
-        {loading ? 'loading placeholder' : this.renderList(data)}
+        {loading ? <LoadingPage/> : this.renderList(data)}
       </div>
     );
   }

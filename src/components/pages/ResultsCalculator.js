@@ -11,7 +11,8 @@ function ResultsCalculator(props) {
   const [error, setError] = React.useState(false);
   const [result, setResult] = React.useState(null);
   const quizContext = useContext(QuizContext);
-  console.log(result, 'result check');
+  // const getBestMatch = quizContext.getBestMatches();
+  // console.log(result, 'result check');
 
   React.useEffect(() => {
     // get sql data on component mount
@@ -22,12 +23,16 @@ function ResultsCalculator(props) {
   }, []);
 
   React.useEffect(() => {
+
     // when quizContext or countriesArray change, re-evaluate results
-    console.log('quiz data', quizContext);
-    console.log('sql data', countriesArray);
+    // console.log('quiz data', quizContext);
+    // console.log('sql data', countriesArray);
 
     if (countriesArray.length === 0) {
       return; // wait for sql data
+    } else if (quizContext.resultCountry !== null) {
+      //we have already calculated the result country at this point
+      return;
     }
 
     const {questionValues} = quizContext;
@@ -48,7 +53,7 @@ function ResultsCalculator(props) {
 
       if (isNaN(min) || isNaN(max)) {
         // data is missing for this quality, do not use it for calculations
-        console.error('missing country values for ' + quality);
+        // console.error('missing country values for ' + quality);
         return;
       }
 
@@ -61,9 +66,9 @@ function ResultsCalculator(props) {
         return aDiff - bDiff;
       });
 
-      console.log('min', min, 'max', max, 'userPreference (' + value + '%)', userPreference);
-      console.log('question', quality, value);
-      console.log('sortedPreference', sortedByPreference);
+      // console.log('min', min, 'max', max, 'userPreference (' + value + '%)', userPreference);
+      // console.log('question', quality, value);
+      // console.log('sortedPreference', sortedByPreference);
 
       // increment best match by 2
       sortedByPreference.slice(0, 1).forEach(increment(2));
@@ -72,7 +77,7 @@ function ResultsCalculator(props) {
       sortedByPreference.slice(1, 4).forEach(increment(1));
     });
 
-    console.log('scores', scoreMap.keys(), scoreMap.values());
+    // console.log('scores', scoreMap.keys(), scoreMap.values());
 
     // sort the countries by highest score
     const sortedByScore = countriesArray.sort(({country: a}, {country: b}) => {
@@ -81,13 +86,13 @@ function ResultsCalculator(props) {
 
     const resultCountryData = sortedByScore[0];
 
-    console.log('highest score', resultCountryData, scoreMap.get(resultCountryData.country));
+    // console.log('highest score', resultCountryData, scoreMap.get(resultCountryData.country));
 
     quizContext.updateProviderResult(resultCountryData);
     setResult(resultCountryData);
 
   }, [quizContext, countriesArray]);
-
+  // console.log('render');
   if (loading) {
     return <div>Loading...</div>;
   } else if (error) {

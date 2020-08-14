@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, useHistory, Route, Link} from 'react-router-dom';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
@@ -11,7 +11,7 @@ import ResultsPageStats from './components/pages/ResultsPageStats';
 
 
 function App() {
-
+  console.log('app js render');
   const routes = [
     {
       path: '/',

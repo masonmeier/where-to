@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Title from '../Structure/Title';
 import '../../CSS/landingPage.css';
 import {useHistory} from 'react-router-dom';
 import NavBar from '../Structure/NavBar';
+
 
 function LandingPage() {
   const history = useHistory();
@@ -18,11 +19,10 @@ function LandingPage() {
         <img alt="bg2" src={require('./images/backgrounds/bg2.jpg')}/>
         <img alt="bg3" src={require('./images/backgrounds/bg3.jpg')}/>
         <img alt="bg4" src={require('./images/backgrounds/bg4.jpg')}/>
-        <img alt="bg2" src={require('./images/backgrounds/bg5.jpg')}/>
-        <img alt="bg3" src={require('./images/backgrounds/bg6.jpg')}/>
-        <img alt="bg4" src={require('./images/backgrounds/bg7.jpg')}/>
-        <img alt="bg2" src={require('./images/backgrounds/bg8.jpg')}/>
-        <img alt="bg3" src={require('./images/backgrounds/bg9.jpg')}/>
+        <img alt="bg5" src={require('./images/backgrounds/bg5.jpg')}/>
+        <img alt="bg6" src={require('./images/backgrounds/bg6.jpg')}/>
+        <img alt="bg7" src={require('./images/backgrounds/bg7.jpg')}/>
+        <img alt="bg8" src={require('./images/backgrounds/bg8.jpg')}/>
       </div>
       <div className="backgroundMask"/>
       <div className="centerContent">

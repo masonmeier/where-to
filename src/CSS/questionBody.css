@@ -1,5 +1,6 @@
 
 .questionBody {
+    min-height: 70vh;
     max-width: 100vw;
     max-height: 100vh;
 }
@@ -20,6 +21,10 @@
     margin-top: 40%;
 }
 
+.questionTextHolder {
+    height: 10vh;
+}
+
 .questionText {
     text-align: center;
     width: 80%;
@@ -34,6 +39,7 @@
 }
 
 .leftInputValHolder {
+    margin-top: 20%;
     text-align: center;
     margin-left: auto;
     display: inline-block;

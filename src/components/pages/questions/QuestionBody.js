@@ -31,7 +31,9 @@ function QuestionBody(props) {
       <div className="questionIconContainer">
         <img className="questionIcon" alt="question icon" src={categoryToImage[questionObj.visual]}/>
       </div>
-      <p className="questionText">{questionObj.text}</p>
+      <div className="questionTextHolder">
+        <p className="questionText">{questionObj.text}</p>
+      </div>
       <div className="leftInputValHolder">
         <p>{questionObj.leftVal}</p>
       </div>
