@@ -25,6 +25,29 @@ class ResultsForm extends React.Component {
     this.setState({checked: !this.state.checked});
   }
 
+  submitUserData = () => {
+    const requestOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        title: 'User Input Submission',
+        guessInput: this.state.guessInput,
+        nameText: this.state.nameText
+      })
+    };
+    fetch('http://localhost:3002', requestOptions)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log('user info sanity check', result);
+          return result;
+        },
+        (error) => {
+          throw error;
+        }
+      );
+  };
+
   componentDidMount() {
     const quizContext = this.context;
     console.log(quizContext, 'a');
@@ -47,9 +70,6 @@ class ResultsForm extends React.Component {
               }}
               type="text"
               placeholder="Enter Your Name"/>
-            <Form.Text className="text-muted">
-              This data is to provide custom results
-            </Form.Text>
           </Form.Group>
 
           <Form.Group controlId="formBasicPassword">
@@ -80,6 +100,10 @@ class ResultsForm extends React.Component {
           >
             Submit
           </Button>
+
+          <Form.Text className="text-muted">
+            Location is collected for custom results and is not stored
+          </Form.Text>
         </Form>
       </div>
     );

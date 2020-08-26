@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CSS/formPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/questionBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/questionBody.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/resultspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultspage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../back-end/where-to-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -139,7 +121,10 @@
       <workItem from="1597268888652" duration="130000" />
       <workItem from="1597269116987" duration="2299000" />
       <workItem from="1597273389916" duration="4918000" />
-      <workItem from="1597352675843" duration="14121000" />
+      <workItem from="1597352675843" duration="16508000" />
+      <workItem from="1597439941638" duration="719000" />
+      <workItem from="1598315467430" duration="2245000" />
+      <workItem from="1598389868559" duration="15432000" />
     </task>
     <servers />
   </component>
@@ -157,10 +142,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596145900042" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1595030417322">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1598315962303">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595030417322" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1598315962303" />
     <state width="996" height="349" key="GridCell.Tab.0.bottom" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -204,10 +190,10 @@
     </state>
     <state x="960" y="0" width="960" height="1050" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597195045686" />
     <state x="953" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596570566171" />
-    <state x="435" y="113" width="1150" height="759" key="find.popup" timestamp="1597368642970">
+    <state x="89" y="291" width="1150" height="759" key="find.popup" timestamp="1597369532434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="113" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597368642970" />
+    <state x="89" y="291" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597369532434" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
       <screen x="1920" y="0" width="1536" height="834" />
@@ -260,13 +246,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Structure/ResultsForm.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Structure/ResultsForm.js</url>
-          <line>45</line>
-          <properties lambdaOrdinal="-1" />
+          <line>68</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

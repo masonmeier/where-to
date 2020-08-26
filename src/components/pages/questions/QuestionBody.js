@@ -35,10 +35,10 @@ function QuestionBody(props) {
         <p className="questionText">{questionObj.text}</p>
       </div>
       <div className="leftInputValHolder">
-        <p>{questionObj.leftVal}</p>
+        <p className="questionText">{questionObj.leftVal}</p>
       </div>
       <div className="rightInputValHolder">
-        <p>{questionObj.rightVal}</p>
+        <p className="questionText">{questionObj.rightVal}</p>
       </div>
 
     </div>

@@ -1,10 +1,3 @@
-.navBar {
-    width: 100%;
-    height: 5%;
-    background-color: #a8aca7;
-    text-align: right;
-}
-
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +5,14 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #dadada;
+}
+
+.navBar {
+    width: 100%;
+    height: 5%;
+    background-color: #a8aca7;
+    text-align: right;
 }
 
 code {
@@ -47,5 +48,14 @@ code {
     background-color: #a8aca7;
 }
 
+@media (min-width: 800px) {
+    .navBar {
+        height: 50px;
+    }
 
+    #dropdown-basic {
+        height: 50px;
+        font-size: x-large;
+    }
+}
 

@@ -29,6 +29,9 @@ function LandingPage() {
         <Title/>
         <hr className="hr-light"/>
         <button onClick={startQuiz} className="StartButton">Start</button>
+        <div className="signature">
+          <p className="signatureText">Mason Meier 2020</p>
+        </div>
       </div>
     </div>
   );

@@ -1,24 +1,25 @@
+/*mobile first*/
+
 .landingPage {
     width: 100vw;
     max-height: 100vh;
 }
 
 .StartButton {
-    background-color: #53d6a6;
+    background-color: #a8aca7;
     border-radius: 28px;
-    border: 1px solid #8cff98;
+    border: 1px solid white;
     display: inline-block;
     cursor: pointer;
     color: #000000;
     font-family: Arial;
-    font-size: 17px;
     padding: 16px 31px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #bcffb2;
+    text-shadow: 0px 1px 0px #a8aca7;
 }
 
 .StartButton:hover {
-    background-color: #37ffe9;
+    background-color: white;
 }
 
 .StartButton:active {
@@ -30,7 +31,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #a8aca7;
-    opacity: 50%;
+    opacity: 70%;
     position: absolute;
     z-index: -1;
 }
@@ -49,7 +50,6 @@
 }
 
 .TitleImage {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -62,7 +62,7 @@
 
 #container {
     position: absolute;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
     z-index: -5;
     overflow: hidden;
@@ -72,7 +72,7 @@
     position: absolute;
     overflow: hidden;
     left: 0;
-    min-height: 100%;
+    height: 60%;
     min-width: 100%;
 
 }
@@ -225,4 +225,67 @@
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
     animation-delay: 2s;
+}
+
+.signature {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.signatureText {
+    position: relative;
+}
+
+@media (min-width: 360px) {
+    .StartButton {
+        margin-top: 20%;
+        font-size: 17px;
+    }
+
+    .TitleImage {
+        width: 70%;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .titleImage {
+        margin-top: 20%;
+    }
+
+    .StartButton {
+        margin-top: 30%;
+        font-size: 34px;
+        padding: 32px 62px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dropdown {
+        float: left;
+    }
+
+    .centerContent {
+        margin-top: 10%;
+    }
+
+    .TitleImage {
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .StartButton {
+        margin-top: 0;
+        position: relative;
+        font-size: large;
+        padding: 16px 31px;
+    }
+
+    .titleImage {
+        width: 30%;
+    }
+
 }

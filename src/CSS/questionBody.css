@@ -3,6 +3,7 @@
     min-height: 70vh;
     max-width: 100vw;
     max-height: 100vh;
+    background-color: #dadada;
 }
 
 .questionIconContainer {
@@ -28,7 +29,8 @@
 .questionText {
     text-align: center;
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto;
+    font-size: x-large;
 }
 
 .userSlider {
@@ -59,12 +61,28 @@
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     display: block;
-    width: 20%;
+    width: 30%;
+    background-color: #a8aca7;
+    border-radius: 28px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: #000000;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #a8aca7;
 }
 
-.inputContainer {
+.next:hover {
+    background-color: white;
+}
 
+.next:active {
+    position: relative;
+    top: 1px;
 }
 
 input[type=range].userSlider {
@@ -80,7 +98,7 @@ input[type=range].userSlider:focus {
 }
 
 input[type=range].userSlider::-webkit-slider-runnable-track {
-    background: rgba(16, 207, 169, 0.5);
+    background: rgba(168, 172, 167, 0.5);
     border: 0.8px solid #010101;
     width: 100%;
     height: 7px;
@@ -99,11 +117,11 @@ input[type=range].userSlider::-webkit-slider-thumb {
 }
 
 input[type=range].userSlider:focus::-webkit-slider-runnable-track {
-    background: #2defc8;
+    background: #a8aca7;
 }
 
 input[type=range].userSlider::-moz-range-track {
-    background: rgba(16, 207, 169, 0.5);
+    background: rgba(168, 172, 167, 0.5);
     border: 0.8px solid #010101;
     width: 100%;
     height: 7px;
@@ -130,12 +148,12 @@ input[type=range].userSlider::-ms-track {
 }
 
 input[type=range].userSlider::-ms-fill-lower {
-    background: #0c967b;
+    background: #a8aca7;
     border: 0.8px solid #010101;
 }
 
 input[type=range].userSlider::-ms-fill-upper {
-    background: rgba(16, 207, 169, 0.5);
+    background: rgba(168, 172, 167, 0.5);
     border: 0.8px solid #010101;
 }
 
@@ -151,11 +169,11 @@ input[type=range].userSlider::-ms-thumb {
 }
 
 input[type=range].userSlider:focus::-ms-fill-lower {
-    background: rgba(16, 207, 169, 0.5);
+    background: rgba(168, 172, 167, 0.5);
 }
 
 input[type=range].userSlider:focus::-ms-fill-upper {
-    background: #2defc8;
+    background: #a8aca7;
 }
 
 /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
@@ -165,5 +183,11 @@ how to remove the virtical space around the range input in IE*/
     input[type=range].userSlider {
         margin: 0;
         /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+}
+
+@media (min-width: 800px) {
+    .next {
+        font-size: x-large;
     }
 }
