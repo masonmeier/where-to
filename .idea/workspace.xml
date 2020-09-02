@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scratch/countryCapitals.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Structure/Background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSS/formPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/formPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/questionBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/questionBody.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/resultspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultspage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +131,13 @@
       <workItem from="1597352675843" duration="16508000" />
       <workItem from="1597439941638" duration="719000" />
       <workItem from="1598315467430" duration="2245000" />
-      <workItem from="1598389868559" duration="15432000" />
+      <workItem from="1598389868559" duration="18719000" />
+      <workItem from="1598480418577" duration="2987000" />
+      <workItem from="1598561339267" duration="16561000" />
+      <workItem from="1598677603733" duration="172000" />
+      <workItem from="1598729475980" duration="6362000" />
+      <workItem from="1598907559442" duration="7739000" />
+      <workItem from="1598991170726" duration="13876000" />
     </task>
     <servers />
   </component>
@@ -190,10 +203,10 @@
     </state>
     <state x="960" y="0" width="960" height="1050" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597195045686" />
     <state x="953" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596570566171" />
-    <state x="89" y="291" width="1150" height="759" key="find.popup" timestamp="1597369532434">
+    <state x="89" y="291" width="1150" height="759" key="find.popup" timestamp="1599005164452">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="89" y="291" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597369532434" />
+    <state x="89" y="291" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599005164452" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
       <screen x="1920" y="0" width="1536" height="834" />
@@ -252,6 +265,17 @@
           <url>file://$PROJECT_DIR$/src/components/Structure/ResultsForm.js</url>
           <line>68</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/QuizProvider.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

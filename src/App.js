@@ -8,6 +8,7 @@ import UserInput from './components/pages/questions/Input';
 import ResultsPageNews from './components/pages/ResultsPageNews';
 import ResultsCalculator from './components/pages/ResultsCalculator';
 import ResultsPageStats from './components/pages/ResultsPageStats';
+import WeatherInformation from './components/pages/ResultInformation/WeatherInformation';
 
 
 function App() {
@@ -33,10 +34,10 @@ function App() {
       path: '/results/news',
       component: ResultsPageNews,
     },
-    // {
-    //   path: '/results/weather',
-    //   component: ResultPageWeather,
-    // },
+    {
+      path: '/results/weather',
+      component: WeatherInformation,
+    },
     // {
     //   path: '/',
     //   component: ResultsPageImmigration

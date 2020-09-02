@@ -55,7 +55,34 @@ code {
 
     #dropdown-basic {
         height: 50px;
-        font-size: x-large;
+        font-size: small;
     }
+}
+
+@media (min-width: 1080px) {
+    .navBar {
+        height: 30px;
+        width: 100%;
+    }
+
+    #dropdown-basic {
+        height: 30px;
+        font-size: small;
+        margin-right: 80%;
+    }
+
+    .centerContent {
+        margin-top: 0;
+    }
+
+    .backgroundMask {
+        overflow: hidden;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+
 }
 

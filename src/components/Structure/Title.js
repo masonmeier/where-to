@@ -4,7 +4,7 @@ import '../../CSS/landingPage.css';
 export default class Title extends Component {
   render() {
     return (
-      <div className='TitleImage'>
+      <div className='title-image-container'>
         <img className="titleImage" alt="title" src={require('../pages/images/title.png')}/>
       </div>
     );

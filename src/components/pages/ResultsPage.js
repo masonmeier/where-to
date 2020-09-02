@@ -13,7 +13,7 @@ const ResultsPage = (props) => {
   // const result = props.result;
 
   let history = useHistory();
-  const quizContext = useContext(QuizContext);
+
   const loadHandler = () => {
     setLoading(true);
     setTimeout(() => {

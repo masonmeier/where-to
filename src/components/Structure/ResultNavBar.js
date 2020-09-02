@@ -1,9 +1,11 @@
-import React, {Component} from 'react';
+import React, {Component, useContext} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import {useHistory} from 'react-router-dom';
+import QuizProvider, {QuizContext} from '../QuizProvider';
 
 
 const ResultNavBar = (props) => {
+  const quizContext = useContext(QuizContext);
   let history = useHistory();
   const viewStats = () => {
     history.push('/results/stats');
@@ -14,10 +16,8 @@ const ResultNavBar = (props) => {
   const viewWeather = () => {
     history.push('/results/weather');
   };
-  const viewMap = () => {
-    history.push('/results/map');
-  };
-
+  const capital = quizContext.resultCountry.capital_city;
+  const isoTwo = quizContext.resultCountry.iso2;
 
   return (
     <Nav fill variant="tabs" defaultActiveKey="/results/stats">
@@ -31,7 +31,10 @@ const ResultNavBar = (props) => {
         <Nav.Link className='resultNavLinkText' onClick={viewWeather}>Weather</Nav.Link>
       </Nav.Item>
       <Nav.Item className='resultNavLink'>
-        <Nav.Link className='resultNavLinkText' onClick={viewMap}>Map</Nav.Link>
+        <a
+          target={capital}
+          className='resultNavLinkText nav-link'
+          href={`https://www.google.com/maps/dir/Current+Location/${capital}%20${isoTwo}`}>Flights</a>
       </Nav.Item>
     </Nav>
   );

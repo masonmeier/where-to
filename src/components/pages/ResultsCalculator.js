@@ -1,8 +1,6 @@
 import React, {useContext} from 'react';
 import {QuizContext} from '../QuizProvider';
 import getCountryData from '../SQLCall';
-import NewsInformation from './ResultInformation/NewsInformation';
-import ResultNavBar from '../Structure/ResultNavBar';
 import ResultsPage from './ResultsPage';
 
 function ResultsCalculator(props) {

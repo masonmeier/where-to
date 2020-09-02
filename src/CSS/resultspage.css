@@ -1,9 +1,16 @@
 /*Mobile design starts here*/
 
 .getResultsHolder {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
+}
+
+.title-image-container {
+    margin-top: 2%;
+}
+
+.backgroundMask {
+    height: 100vh;
 }
 
 .getResultsTextHolder {
@@ -32,7 +39,7 @@
 
 .loadContainer {
     background-color: #3199da;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .flagHolder {
@@ -45,14 +52,13 @@
 }
 
 .resultsPage {
-    min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     position: relative;
 }
 
 .titleImage {
-    margin-top: 5%;
+    margin-top: 0;
     margin-bottom: 5%;
 }
 
@@ -158,7 +164,7 @@
     min-height: 100vh;
     min-width: 100vw;
     z-index: -5;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #container img {
@@ -356,4 +362,94 @@
     .statsListItem {
         font-size: x-large;
     }
+
+    .titleImage {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .title-image-container {
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .loadingGif {
+        width: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .loadContainer {
+        background-color: #3199da;
+        height: 100vh;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .resultsPage {
+        padding-bottom: 2.5%;
+    }
+
+    .title-image-container {
+        padding-top: 0;
+    }
+
+    .nav-tabs {
+        width: 80%;
+        margin: auto;
+    }
+
+    .statsHeader {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .titleImage {
+        width: 80%;
+    }
+
+    .flag {
+        width: 20%;
+    }
+
+    .countryStatsHeader {
+        margin-top: 1%;
+    }
+
+    .nationalStats {
+        padding-top: 5px;
+    }
+
+    .resultsPageNews {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsContainer {
+        height: 10%;
+
+    }
+
+    div::-webkit-scrollbar {
+        display: none;
+    }
+
+    .newsListItem {
+        border-radius: 10px;
+        width: 40%;
+        display: inline-block;
+    }
+
+    .newsImage {
+        border-radius: 10px;
+    }
+
+    .articleText {
+        position: relative;
+    }
+
 }
