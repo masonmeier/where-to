@@ -12,7 +12,6 @@ import WeatherInformation from './components/pages/ResultInformation/WeatherInfo
 
 
 function App() {
-  console.log('app js render');
   const routes = [
     {
       path: '/',

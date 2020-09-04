@@ -24,8 +24,6 @@ function QuestionBody(props) {
   const questionNumber = quizContext.getCurrentQuestionNum();
   const questionObj = quizContext.getCurrentQuestionObj();
 
-
-  console.log(questionObj.visual, 'question object visual sanity check');
   return (
     <div className="questionBody">
       <div className="questionIconContainer">

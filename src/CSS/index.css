@@ -62,7 +62,9 @@ code {
 @media (min-width: 1080px) {
     .navBar {
         height: 30px;
-        width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #dropdown-basic {

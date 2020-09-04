@@ -9,8 +9,6 @@ function ResultsCalculator(props) {
   const [error, setError] = React.useState(false);
   const [result, setResult] = React.useState(null);
   const quizContext = useContext(QuizContext);
-  // const getBestMatch = quizContext.getBestMatches();
-  // console.log(result, 'result check');
 
   React.useEffect(() => {
     // get sql data on component mount
@@ -75,8 +73,6 @@ function ResultsCalculator(props) {
       sortedByPreference.slice(1, 4).forEach(increment(1));
     });
 
-    // console.log('scores', scoreMap.keys(), scoreMap.values());
-
     // sort the countries by highest score
     const sortedByScore = countriesArray.sort(({country: a}, {country: b}) => {
       return scoreMap.get(b) - scoreMap.get(a);
@@ -84,13 +80,10 @@ function ResultsCalculator(props) {
 
     const resultCountryData = sortedByScore[0];
 
-    // console.log('highest score', resultCountryData, scoreMap.get(resultCountryData.country));
-
     quizContext.updateProviderResult(resultCountryData);
     setResult(resultCountryData);
 
   }, [quizContext, countriesArray]);
-  // console.log('render');
   if (loading) {
     return <div>Loading...</div>;
   } else if (error) {

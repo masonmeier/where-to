@@ -59,7 +59,6 @@ class QuizProvider extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({setDetails: data});
-        console.log(this.state.setDetails, 'details sanity check');
       });
   };
 

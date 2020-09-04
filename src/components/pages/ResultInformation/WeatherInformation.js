@@ -4,6 +4,7 @@ import {QuizContext} from '../../QuizProvider';
 import ResultNavBar from '../../Structure/ResultNavBar';
 import NavBar from '../../Structure/NavBar';
 import Title from '../../Structure/Title';
+import '../../../CSS/weatherPage.css';
 
 class WeatherInformation extends Component {
   static contextType = QuizContext;
@@ -22,12 +23,10 @@ class WeatherInformation extends Component {
 
   componentDidMount() {
     const capital = this.context.resultCountry.capital_city;
-    console.log('capital_city sanity check', capital);
     fetch('http://localhost:3002/weather?q=' + capital)
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('weather data check', result);
           return result;
         },
         (error) => {
@@ -39,7 +38,6 @@ class WeatherInformation extends Component {
 
   onChangeValue(e) {
     this.setState({temperatureSelection: e.target.value});
-    console.log(this.state.temperatureSelection, ('temp select sanity check'));
   }
 
   renderWeather = data => {
@@ -50,27 +48,33 @@ class WeatherInformation extends Component {
     fiveDayForecast.forEach(day => {
       day.main.tempC = Math.round((day.main.temp - 273.15) * 100) / 100;
       day.main.tempF = Math.round((day.main.tempC * 1.8 + 32) * 100) / 100;
-      console.log(day, 'hey hows your DAY CHECK');
     });
 
     return (
-      <div className="resultsPageWeather">
-        <div>
-          <fieldset onChange={this.onChangeValue}>
-            <h2 className="weather-page-title">How's the weather in {this.context.resultCountry.capital_city}?</h2>
+      <div className="results-page-weather">
+        <fieldset onChange={this.onChangeValue}>
+          <h2 className="weather-page-title">How's the weather in {this.context.resultCountry.capital_city}?</h2>
+          <div className="conversion-toggle">
             <legend>Conversion°</legend>
-            <input type="radio" id="celsius" name="temp-radio-btn" value='c' defaultChecked/>
-            <label htmlFor="celsius">C°</label>
-            <input type="radio" id="fahrenheit" name="temp-radio-btn" value='f'/>
-            <label htmlFor="fahrenheit">F°</label>
-          </fieldset>
+            <div className="temp-holder">
+              <input type="radio" id="celsius" name="radio-btn" className="temp-radio-btn" value='c' defaultChecked/>
+              <label htmlFor="celsius">C°</label>
+            </div>
+            <div className="temp-holder">
+              <input type="radio" id="fahrenheit" name="radio-btn" className="temp-radio-btn" value='f'/>
+              <label htmlFor="fahrenheit">F°</label>
+            </div>
+
+          </div>
+        </fieldset>
+        <div className="five-day-forecast">
           {fiveDayForecast.map(day =>
             <div className="daily-forecast" key={day.date}>
               <h2 className="date">
                 {day.date.toDateString()}
               </h2>
               <div className="weather-icon-container">
-                <img src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}/>
+                <img className="weather-image" src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}/>
 
               </div>
               <h3 className="cloud-coverage">

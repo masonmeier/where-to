@@ -9,7 +9,6 @@ import Title from '../Structure/Title';
 const ResultsPageStats = (props) => {
   const quizContext = useContext(QuizContext);
   const result = quizContext.resultCountry;
-  console.log(result, 'result items check');
   const countryFlag = require(`./images/flagssvg/${result.iso2}.svg`);
   return (
     <div className="resultsPage">

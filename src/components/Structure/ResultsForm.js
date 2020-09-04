@@ -39,7 +39,6 @@ class ResultsForm extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('user info sanity check', result);
           return result;
         },
         (error) => {
@@ -47,15 +46,6 @@ class ResultsForm extends React.Component {
         }
       );
   };
-
-  componentDidMount() {
-    const quizContext = this.context;
-    console.log(quizContext, 'a');
-  }
-
-  //
-  // // const quizContext = useContext(QuizContext);
-  // // const getUserGeoLocationDetails = quizContext.getGeoLocation;
 
   render() {
     let quizContext = this.context;

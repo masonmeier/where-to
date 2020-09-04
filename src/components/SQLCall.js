@@ -21,7 +21,6 @@ export default function getCountryData() {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('countryData sanity check', result);
           return result;
         },
         (error) => {

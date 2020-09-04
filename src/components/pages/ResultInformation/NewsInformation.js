@@ -20,7 +20,6 @@ class NewsInformation extends Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('news article sanity check', result);
           return result;
         },
         (error) => {
@@ -36,13 +35,12 @@ class NewsInformation extends Component {
       <div className="newsContainer">
         <ul className="relatedNews">
           {data.articles.map(item => (
-            console.log('item sanity check', item),
-              <li className="newsListItem" key={item.url}>
-                <a className="articleText" href={item.url} target="_blank">
-                  {item.title}
-                </a>
-                <img className="newsImage" src={item.urlToImage}/>
-              </li>
+            <li className="newsListItem" key={item.url}>
+              <a className="articleText" href={item.url} target="_blank">
+                {item.title}
+              </a>
+              <img alt="News Story Image" className="newsImage" src={item.urlToImage}/>
+            </li>
           ))}
         </ul>
       </div>
