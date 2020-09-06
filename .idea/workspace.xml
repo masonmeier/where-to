@@ -3,30 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/arrayBreakDown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/arrayFilterTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/countryCapitals.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/countryCodes.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/editboi.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch/sql2boi.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/weatherPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/questionBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/questionBody.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/resultspage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultsPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/Background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +127,8 @@
       <workItem from="1598991170726" duration="14517000" />
       <workItem from="1599085137672" duration="2775000" />
       <workItem from="1599167155293" duration="9494000" />
-      <workItem from="1599257361715" duration="2639000" />
+      <workItem from="1599257361715" duration="4140000" />
+      <workItem from="1599333229175" duration="1832000" />
     </task>
     <servers />
   </component>
