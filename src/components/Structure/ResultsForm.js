@@ -35,7 +35,7 @@ class ResultsForm extends React.Component {
         nameText: this.state.nameText
       })
     };
-    fetch('http://localhost:3002', requestOptions)
+    fetch('http://localhost:3000', requestOptions)
       .then(res => res.json())
       .then(
         (result) => {

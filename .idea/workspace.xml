@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,8 @@
       <workItem from="1599085137672" duration="2775000" />
       <workItem from="1599167155293" duration="9494000" />
       <workItem from="1599257361715" duration="4140000" />
-      <workItem from="1599333229175" duration="1832000" />
+      <workItem from="1599333229175" duration="3012000" />
+      <workItem from="1599689170070" duration="682000" />
     </task>
     <servers />
   </component>
@@ -194,10 +198,10 @@
     </state>
     <state x="960" y="0" width="960" height="1050" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597195045686" />
     <state x="953" y="0" width="974" height="1057" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596570566171" />
-    <state x="2106" y="163" width="920" height="603" key="find.popup" timestamp="1599260132694">
-      <screen x="1920" y="0" width="1536" height="834" />
+    <state x="478" y="170" width="1150" height="759" key="find.popup" timestamp="1599689954981">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="89" y="291" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599005164452" />
+    <state x="478" y="170" width="1150" height="759" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599689954981" />
     <state x="2106" y="163" width="920" height="603" key="find.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1599260132694" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
