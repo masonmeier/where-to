@@ -3,7 +3,6 @@ import {BrowserRouter, useHistory, Route, Link} from 'react-router-dom';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
-import ResultsPage from './components/pages/ResultsPage';
 import UserInput from './components/pages/questions/Input';
 import ResultsPageNews from './components/pages/ResultsPageNews';
 import ResultsCalculator from './components/pages/ResultsCalculator';

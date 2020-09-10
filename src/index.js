@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './app';
 import './CSS/index.css';
 import Dropdown from 'bootstrap/js/src/dropdown';
 // import React, {Timeout} from 'react';
