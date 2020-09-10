@@ -24,8 +24,8 @@ const NavBar = (props) => {
 
         <Dropdown.Menu>
           <Dropdown.Item onClick={restart}>Restart</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">About the Author</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">LinkedIn</Dropdown.Item>
+          <Dropdown.Item href="https://www.linkedin.com/in/mason-meier-30a7b2178/"
+                         target="_blank">Contact</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>

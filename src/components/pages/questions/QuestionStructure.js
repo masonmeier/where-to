@@ -12,9 +12,6 @@ function QuestionStructure(props) {
   return (
     <div className="slideContainer">
       <NavBar/>
-      <div className="advertisement">
-        <h1 className="add-text">this is an add</h1>
-      </div>
       <div className="questionContainer">
         <QuestionBody history={props.history}/>
         <UserInput history={props.history}/>
