@@ -17,7 +17,7 @@ export default function getCountryData() {
 
    */
   const CountryData =
-    fetch('http://localhost:3000')
+    fetch('http://localhost:3002')
       .then(res => res.json())
       .then(
         (result) => {
