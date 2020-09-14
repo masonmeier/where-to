@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,7 @@
       <workItem from="1599777921053" duration="1127000" />
       <workItem from="1599856464983" duration="3009000" />
       <workItem from="1600047757116" duration="1517000" />
-      <workItem from="1600049667021" duration="4507000" />
+      <workItem from="1600049667021" duration="4774000" />
     </task>
     <servers />
   </component>
@@ -267,7 +268,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Structure/ResultsForm.js</url>
-          <line>60</line>
+          <line>59</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
