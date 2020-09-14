@@ -17,7 +17,7 @@ export default function getCountryData() {
 
    */
   const CountryData =
-    fetch('http://localhost:3002')
+    fetch('http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002')
       .then(res => res.json())
       .then(
         (result) => {
