@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import {QuizContext} from '../../QuizProvider';
-import {useHistory} from 'react-router-dom';
 import economic from '../images/QuestionIcons/economic.png';
 import education from '../images/QuestionIcons/education.png';
 import environment from '../images/QuestionIcons/environment.png';
@@ -21,7 +20,6 @@ const categoryToImage = {
 
 function QuestionBody(props) {
   const quizContext = useContext(QuizContext);
-  const questionNumber = quizContext.getCurrentQuestionNum();
   const questionObj = quizContext.getCurrentQuestionObj();
 
   return (

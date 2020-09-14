@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 import questionValues from './questionValues';
 
 
@@ -16,10 +16,6 @@ class QuizProvider extends Component {
       updateProviderResult: this.updateProviderResult,
       resetQuestionValues: this.resetQuestionValues,
       getBestMatches: this.getBestMatches,
-
-      getGeoLocation: this.getUserGeoLocationDetails,
-      details: null,
-      setDetails: null,
 
       //answerValues is where the inputs from the user will be stored
       answerValues: [],
@@ -53,14 +49,7 @@ class QuizProvider extends Component {
     this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1});
   };
 
-  getUserGeoLocationDetails = () => {
-
-    fetch('https://geolocation-db.com/json/697de680-a737-11ea-9820-af05f4014d91')
-      .then(response => response.json())
-      .then(data => {
-        this.setState({setDetails: data});
-      });
-  };
+  getRemoteServerURL = () => this.state.remoteServerURL;
 
   getCurrentQuestionNum = () => this.state.currentQuestionIndex;
   getCurrentQuestionObj = () => this.state.questionValues[this.getCurrentQuestionNum()];
@@ -80,5 +69,5 @@ class QuizProvider extends Component {
 }
 
 export default QuizProvider;
-
 export const QuizContext = React.createContext();
+export const remoteServerURL = 'http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002';

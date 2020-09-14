@@ -5,6 +5,8 @@ import {QuizContext} from '../QuizProvider';
 import NavBar from '../Structure/NavBar';
 import Title from '../Structure/Title';
 
+
+//use context, using context, this is an example of using context in a functional component
 const ResultsPageNews = (props) => {
   const quizContext = useContext(QuizContext);
   const result = quizContext.resultCountry;

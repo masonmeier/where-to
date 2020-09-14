@@ -1,9 +1,3 @@
-const economic = '../images/QuestionIcons/economic.png';
-const education = '';
-const environment = '';
-const political = '';
-const social = '';
-
 const questionValues = [
   {
     text: 'How important is it that you make as much money as possible?',

@@ -1,10 +1,11 @@
-import React, {Component, useContext} from 'react';
+import React, {Component} from 'react';
 import LoadingPage from '../LoadingPage';
 import {QuizContext} from '../../QuizProvider';
 import ResultNavBar from '../../Structure/ResultNavBar';
 import NavBar from '../../Structure/NavBar';
 import Title from '../../Structure/Title';
 import '../../../CSS/weatherPage.css';
+import {remoteServerURL} from '../../QuizProvider';
 
 class WeatherInformation extends Component {
   static contextType = QuizContext;
@@ -23,7 +24,7 @@ class WeatherInformation extends Component {
 
   componentDidMount() {
     const capital = this.context.resultCountry.capital_city;
-    fetch('http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002/weather?q=' + capital)
+    fetch(`${remoteServerURL}/weather?q=` + capital)
       .then(res => res.json())
       .then(
         (result) => {

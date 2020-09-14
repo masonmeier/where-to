@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import LoadingPage from '../LoadingPage';
+import {remoteServerURL} from '../../QuizProvider';
 
 class NewsInformation extends Component {
   constructor(props) {
@@ -12,11 +13,10 @@ class NewsInformation extends Component {
     };
   }
 
-//look into promise.all for multiple
-// fetch requests
   componentDidMount() {
     const country = this.props.result;
-    fetch('http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002/news?q=' + country)
+
+    fetch(`${remoteServerURL}/news?q=` + country)
       .then(res => res.json())
       .then(
         (result) => {
@@ -30,7 +30,6 @@ class NewsInformation extends Component {
   }
 
   renderList = data => {
-
     return (
       <div className="newsContainer">
         <ul className="relatedNews">
@@ -50,7 +49,6 @@ class NewsInformation extends Component {
   render() {
     const {loading, data} = this.state;
     return (
-
       <div>
         {loading ? <LoadingPage/> : this.renderList(data)}
       </div>
@@ -60,14 +58,4 @@ class NewsInformation extends Component {
 }
 
 
-// function ResultsPage(props) {
-//   return (
-//     <div className="questionBody">
-//       <h1>Results page text</h1>
-//       <ResultsCalculator/>
-//
-//     </div>
-//   );
-// }
-//
 export default NewsInformation;

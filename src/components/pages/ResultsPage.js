@@ -1,27 +1,24 @@
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import LoadingPage from './LoadingPage';
 import '../../CSS/resultsPage.css';
 import NavBar from '../Structure/NavBar';
-import {QuizContext} from '../QuizProvider';
 import ResultsForm from '../Structure/ResultsForm';
 
 
 const ResultsPage = (props) => {
-  // const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
-  // const result = props.result;
 
   let history = useHistory();
 
-  const loadHandler = () => {
+  const getLoadingPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
       history.push('/results/stats');
     }, 2000);
   };
-  const getLoadingPage = loadHandler;
+  
   if (loading) return <LoadingPage/>;
 
   return (

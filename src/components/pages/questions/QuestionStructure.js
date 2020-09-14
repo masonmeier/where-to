@@ -1,5 +1,4 @@
-import React, {useRef, useContext} from 'react';
-import {QuizContext} from '../../QuizProvider';
+import React from 'react';
 import NavBar from '../../Structure/NavBar';
 import UserInput from './Input';
 import QuestionBody from './QuestionBody';
@@ -7,8 +6,6 @@ import '../../../CSS/questionBody.css';
 
 
 function QuestionStructure(props) {
-  const quizContext = useContext(QuizContext);
-
   return (
     <div className="slideContainer">
       <NavBar/>

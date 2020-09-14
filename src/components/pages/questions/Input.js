@@ -1,4 +1,4 @@
-import React, {useRef, useContext} from 'react';
+import React, {useContext} from 'react';
 import {QuizContext} from '../../QuizProvider';
 
 // import { useHistory } from "react-router-dom";

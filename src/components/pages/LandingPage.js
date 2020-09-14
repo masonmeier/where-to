@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Title from '../Structure/Title';
 import '../../CSS/landingPage.css';
 import {useHistory} from 'react-router-dom';

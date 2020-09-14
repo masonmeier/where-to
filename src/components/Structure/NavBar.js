@@ -1,4 +1,4 @@
-import React, {Component, useContext} from 'react';
+import React, {useContext} from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../CSS/index.css';

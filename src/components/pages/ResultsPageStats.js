@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import ResultNavBar from '../Structure/ResultNavBar';
 import {QuizContext} from '../QuizProvider';
-import {useHistory} from 'react-router-dom';
 import NavBar from '../Structure/NavBar';
 import Title from '../Structure/Title';
 
@@ -43,5 +42,3 @@ const ResultsPageStats = (props) => {
 
 export default ResultsPageStats;
 
-//
-// <img className="flag" alt="country flag" src={require(`images/flagssvg/${result.iso2}.svg`)}/>;

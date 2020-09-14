@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, useHistory, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import QuizProvider from './components/QuizProvider';
 import LandingPage from './components/pages/LandingPage';
 import QuestionStructure from './components/pages/questions/QuestionStructure';
@@ -36,10 +36,6 @@ function App() {
       path: '/results/weather',
       component: WeatherInformation,
     },
-    // {
-    //   path: '/',
-    //   component: ResultsPageImmigration
-    // },
     {
       path: '/input',
       component: UserInput,
