@@ -1,8 +1,8 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import '../../CSS/formPage.css';
-import {QuizContext} from '../QuizProvider';
+import {QuizContext, remoteServerURL} from '../QuizProvider';
 
 
 class ResultsForm extends React.Component {
@@ -25,30 +25,31 @@ class ResultsForm extends React.Component {
     this.setState({checked: !this.state.checked});
   }
 
-  submitUserData = () => {
-    const requestOptions = {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        title: 'User Input Submission',
-        guessInput: this.state.guessInput,
-        nameText: this.state.nameText
-      })
-    };
-    fetch('http://localhost:3000', requestOptions)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          return result;
-        },
-        (error) => {
-          throw error;
-        }
-      );
-  };
+  //to-do: create user data submission
+
+  // submitUserData = () => {
+  //   const requestOptions = {
+  //     method: 'POST',
+  //     headers: {'Content-Type': 'application/json'},
+  //     body: JSON.stringify({
+  //       title: 'User Input Submission',
+  //       guessInput: this.state.guessInput,
+  //       nameText: this.state.nameText
+  //     })
+  //   };
+  //   fetch(remoteServerURL, requestOptions)
+  //     .then(res => res.json())
+  //     .then(
+  //       (result) => {
+  //         return result;
+  //       },
+  //       (error) => {
+  //         throw error;
+  //       }
+  //     );
+  // };
 
   render() {
-    let quizContext = this.context;
     return (
       <div className="formHolder">
         <Form>
@@ -82,7 +83,6 @@ class ResultsForm extends React.Component {
           <Button
             onClick={() => {
               this.state.loadPage();
-              quizContext.getGeoLocation();
             }}
             disabled={!this.state.checked || this.state.guessInput.length === 0 || this.state.nameText.length === 0}
             variant="primary"
