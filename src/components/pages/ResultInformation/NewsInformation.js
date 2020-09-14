@@ -16,7 +16,7 @@ class NewsInformation extends Component {
 // fetch requests
   componentDidMount() {
     const country = this.props.result;
-    fetch('http://localhost:3000/news?q=' + country)
+    fetch('http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002/news?q=' + country)
       .then(res => res.json())
       .then(
         (result) => {

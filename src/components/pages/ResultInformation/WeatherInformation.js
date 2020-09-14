@@ -23,7 +23,7 @@ class WeatherInformation extends Component {
 
   componentDidMount() {
     const capital = this.context.resultCountry.capital_city;
-    fetch('http://localhost:3000/weather?q=' + capital)
+    fetch('http://ec2-54-190-70-0.us-west-2.compute.amazonaws.com:3002/weather?q=' + capital)
       .then(res => res.json())
       .then(
         (result) => {
