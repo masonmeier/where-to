@@ -1,6 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import '../../CSS/formPage.css';
 import {QuizContext} from '../QuizProvider';
 
