@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/ResultNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +44,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\Structure" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\Structure" />
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\CSS" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -139,7 +143,10 @@
       <workItem from="1599777921053" duration="1127000" />
       <workItem from="1599856464983" duration="3009000" />
       <workItem from="1600047757116" duration="1517000" />
-      <workItem from="1600049667021" duration="4774000" />
+      <workItem from="1600049667021" duration="4936000" />
+      <workItem from="1600127040309" duration="5145000" />
+      <workItem from="1600203725020" duration="851000" />
+      <workItem from="1600211793541" duration="319000" />
     </task>
     <servers />
   </component>
@@ -227,11 +234,11 @@
     </state>
     <state x="531" y="238" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597277725728" />
     <state x="2345" y="189" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596580150054" />
-    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup" timestamp="1600049673059">
+    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup" timestamp="1600212052013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595543830027" />
-    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600049673059" />
+    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600212052013" />
     <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577857110" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594259898428" />
   </component>

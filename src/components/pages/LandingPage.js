@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from '../Structure/Title';
 import '../../CSS/landingPage.css';
 import {useHistory} from 'react-router-dom';
 import NavBar from '../Structure/NavBar';
@@ -12,26 +11,35 @@ function LandingPage() {
   };
 
   return (
-    <div className="landingPage">
+    <div className="landing-Page">
       <NavBar/>
-      <div id="container">
-        <img alt="bg1" src={require('./images/backgrounds/bg1.jpg')}/>
-        <img alt="bg2" src={require('./images/backgrounds/bg2.jpg')}/>
-        <img alt="bg3" src={require('./images/backgrounds/bg3.jpg')}/>
-        <img alt="bg4" src={require('./images/backgrounds/bg4.jpg')}/>
-        <img alt="bg5" src={require('./images/backgrounds/bg5.jpg')}/>
-        <img alt="bg6" src={require('./images/backgrounds/bg6.jpg')}/>
-        <img alt="bg7" src={require('./images/backgrounds/bg7.jpg')}/>
-        <img alt="bg8" src={require('./images/backgrounds/bg8.jpg')}/>
-      </div>
-      <div className="backgroundMask"/>
-      <div className="centerContent">
-        <Title/>
-        <hr className="hr-light"/>
-        <button onClick={startQuiz} className="StartButton">Start</button>
-        <div className="signature">
-          <p className="signatureText">Mason Meier 2020</p>
+      <div className="w-row">
+        <div className="w-col w-col-9">
+          <header id="hero" className="hero">
+            <div className="flex-container w-container">
+              <div>
+                <h1 className="heading">Have you ever wondered...</h1>
+                <p className="paragraph">Where in the world you would actually fit in?<br/>‍<br/>Where-To is an
+                  application that tests your preferences against dozens of international <br/>ranking metrics to
+                  determine where you<br/>would actually enjoy living!</p>
+                <button onClick={startQuiz} className="start-button w-button">Start</button>
+              </div>
+              <div className="hero-image-mask"><img
+                src={require('./images/lpimages/title.png')}
+                alt='' className='hero-image'/>
+              </div>
+            </div>
+          </header>
         </div>
+        <div className="column w-col w-col-3">
+          <img src={require('./images/lpimages/10398-plane-window.gif')}
+               loading="lazy"
+               alt=""
+               className="image"/>
+        </div>
+      </div>
+      <div className="signature-holder">
+        <div className="signature">Mason Meier 2020</div>
       </div>
     </div>
   );

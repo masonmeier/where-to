@@ -17,17 +17,17 @@ const NavBar = (props) => {
 
   return (
     <div className='navBar'>
-      <Dropdown className="dropdown">
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Menu
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item onClick={restart}>Restart</Dropdown.Item>
-          <Dropdown.Item href="https://www.linkedin.com/in/mason-meier-30a7b2178/"
-                         target="_blank">Contact</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+      <header id="nav" className="sticky-nav">
+        <nav className="w-container">
+          <ul role="list" className="nav-grid w-list-unstyled">
+            <li id="w-node-ded4bd0810a5-d3ab1131"><a href="#" className="nav-logo-link w-inline-block"><img
+              src="images/7561-planet2.gif" width="80" height="80" alt="" className="nav-logo"/></a></li>
+            <li><a href="#" className="nav-link"></a></li>
+            <li><a href="#" className="nav-link">Contact</a></li>
+            <li><a href="#" className="button w-button">Restart Quiz</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 };
