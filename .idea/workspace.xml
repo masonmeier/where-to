@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +142,7 @@
       <workItem from="1600049667021" duration="4936000" />
       <workItem from="1600127040309" duration="5145000" />
       <workItem from="1600203725020" duration="851000" />
-      <workItem from="1600211793541" duration="319000" />
+      <workItem from="1600211793541" duration="1128000" />
     </task>
     <servers />
   </component>
