@@ -2,7 +2,8 @@ import React, {useContext} from 'react';
 import ResultNavBar from '../Structure/ResultNavBar';
 import {QuizContext} from '../QuizProvider';
 import NavBar from '../Structure/NavBar';
-import Title from '../Structure/Title';
+import '../../CSS/resultsPage.css';
+import Signature from '../Structure/Signature';
 
 
 const ResultsPageStats = (props) => {
@@ -10,32 +11,34 @@ const ResultsPageStats = (props) => {
   const result = quizContext.resultCountry;
   const countryFlag = require(`./images/flagssvg/${result.iso2}.svg`);
   return (
-    <div className="resultsPage">
+    <div className="results-page">
       <NavBar/>
-      <Title/>
       <ResultNavBar/>
-      <div className="resultsPageStats">
-        <h1 className="statsHeader">{result.country}!</h1>
-        <div className="flagHolder">
-          <img className="flag" alt="country flag" src={countryFlag}/>
-        </div>
-
-        <h3 className="countryStatsHeader">Statistics</h3>
-        <div className="nationalStats">
-          <ul className="statsList">
-            <li className="statsListItem">In {result.country} you can expect to make ${result.gdp_pc} USD annually.</li>
-            <li className="statsListItem">At least {result.size_of_gov}% of the population works for the government.
+      <div className="stats-header-holder">
+        <h1 className="stats-header">Your closest matching nation is {result.country}!</h1>
+      </div>
+      <div className="national-flag-holder">
+        <img className="national-flag" alt="country flag" src={countryFlag}/>
+      </div>
+      <div className="result-page-stats">
+        <h3 className="country-stats-header">Statistics</h3>
+        <div className="national-stats">
+          <ul className="stats-list">
+            <li className="stats-list-item">In {result.country} you can expect to make ${result.gdp_pc} USD annually.
             </li>
-            <li className="statsListItem">{result.country} ranks {result.gpi_rank_inverse} out of 158 on the <a
+            <li className="stats-list-item">At least {result.size_of_gov}% of the population works for the government.
+            </li>
+            <li className="stats-list-item">{result.country} ranks {result.gpi_rank_inverse} out of 158 on the <a
               href="http://visionofhumanity.org/indexes/global-peace-index/" target="_blank">Global Peace Index</a>
             </li>
-            <li className="statsListItem">At least {result.percentage_non_religious}% of people in this nation identify
+            <li className="stats-list-item">At least {result.percentage_non_religious}% of people in this nation
+              identify
               as non religious.
             </li>
-
           </ul>
         </div>
       </div>
+      <Signature/>
     </div>
   );
 };

@@ -32,6 +32,7 @@ function UserInput(props) {
     <div className="inputContainer">
       <input className="userSlider" type="range" value={inputVal}
              onChange={e => setInputVal(parseInt(e.target.value))}/>
+      <br/>
       <button className="next" onClick={nextQuestion}>Next</button>
     </div>
   );

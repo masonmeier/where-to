@@ -1,17 +1,88 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {QuizContext} from '../../QuizProvider';
+import economic from '../images/QuestionIcons/economic.png';
+import education from '../images/QuestionIcons/education.png';
+import environment from '../images/QuestionIcons/environment.png';
+import political from '../images/QuestionIcons/political.png';
+import social from '../images/QuestionIcons/social.png';
 import NavBar from '../../Structure/NavBar';
 import UserInput from './Input';
-import QuestionBody from './QuestionBody';
 import '../../../CSS/questionBody.css';
+import '../../../CSS/questionBody.css';
+import '../../../CSS/webflow.css';
+import '../../../CSS/normalize.css';
 
+const categoryToImage = {
+  economic: economic,
+  education: education,
+  environment: environment,
+  political: political,
+  social: social,
+};
+
+
+// <QuestionBody history={props.history}/>
 
 function QuestionStructure(props) {
+  const quizContext = useContext(QuizContext);
+  const questionObj = quizContext.getCurrentQuestionObj();
+  const expHeader = questionObj.questionExplanationHeader;
+  const expText = questionObj.questionExplanationText;
+  const importanceHeader = questionObj.whyIsThisImportantHeader;
+  const importanceText = questionObj.whyIsThisImportText;
+  const questionNumber = questionObj.questionNumber;
+  const questionText = questionObj.questionText;
+  const fact = questionObj.questionFact;
+  const quality = questionObj.quality;
+  const inputType = questionObj.inputType;
+  const inputReference = questionObj.inputReference;
+  const leftVal = questionObj.leftVal;
+  const rightVal = questionObj.rightVal;
+  const className = questionObj.className;
+  const startVal = questionObj.value;
+  const visual = questionObj.visual;
+
+
   return (
-    <div className="slideContainer">
+    <div className="question-body">
       <NavBar/>
-      <div className="questionContainer">
-        <QuestionBody history={props.history}/>
-        <UserInput history={props.history}/>
+      <div className="question-structure">
+        <div className="w-row">
+          <div className="question-explanation w-col w-col-3">
+            <div className="rich-text-block w-richtext">
+              <h2>{expHeader}</h2>
+              <p>{expText}</p>
+              <h4>{importanceHeader}</h4>
+              <p>{importanceText}</p>
+            </div>
+          </div>
+          <div className="question-interaction w-col w-col-9">
+            <header id="hero" className="hero-2">
+              <div className="flex-container w-container">
+                <div className="primary-question-body">
+                  <h1 className="question-number">Question {questionNumber}</h1>
+                  <p className="question-text"><strong>{questionText}</strong></p>
+                  <div className="left-input-val-holder">
+                    <p className="q-val"><strong>{questionObj.leftVal}</strong></p>
+                  </div>
+                  <div className="right-input-val-holder">
+                    <p className="q-val"><strong>{questionObj.rightVal}</strong></p>
+                  </div>
+                  <UserInput history={props.history}/>
+                  <p className="question-fact"><i>{fact}</i></p>
+                </div>
+                <div className="hero-image-mask">
+                  <img
+                    src={categoryToImage[questionObj.visual]}
+                    alt="" className="question-image"/>
+                </div>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div className="signature-holder">
+        <div className="signature">Mason Meier 2020</div>
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import LoadingPage from '../LoadingPage';
-import {QuizContext} from '../../QuizProvider';
-import ResultNavBar from '../../Structure/ResultNavBar';
-import NavBar from '../../Structure/NavBar';
-import Title from '../../Structure/Title';
-import '../../../CSS/weatherPage.css';
-import {remoteServerURL} from '../../QuizProvider';
+import LoadingPage from './LoadingPage';
+import {QuizContext} from '../QuizProvider';
+import ResultNavBar from '../Structure/ResultNavBar';
+import NavBar from '../Structure/NavBar';
+import '../../CSS/weatherPage.css';
+import {remoteServerURL} from '../QuizProvider';
+import Signature from '../Structure/Signature';
 
-class WeatherInformation extends Component {
+class ResultsPageWeather extends Component {
   static contextType = QuizContext;
 
   constructor(props) {
@@ -17,7 +17,7 @@ class WeatherInformation extends Component {
       temperatureSelection: 'c',
     };
     this.onChangeValue = this.onChangeValue.bind(this);
-  }
+  };
 
 //look into promise.all for multiple
 // fetch requests
@@ -56,14 +56,14 @@ class WeatherInformation extends Component {
         <fieldset onChange={this.onChangeValue}>
           <h2 className="weather-page-title">How's the weather in {this.context.resultCountry.capital_city}?</h2>
           <div className="conversion-toggle">
-            <legend>Conversion°</legend>
+            <legend className="conversion-legend">Conversion°</legend>
             <div className="temp-holder">
               <input type="radio" id="celsius" name="radio-btn" className="temp-radio-btn" value='c' defaultChecked/>
-              <label htmlFor="celsius">C°</label>
+              <label className="temp-label-holder" htmlFor="celsius">C°</label>
             </div>
             <div className="temp-holder">
               <input type="radio" id="fahrenheit" name="radio-btn" className="temp-radio-btn" value='f'/>
-              <label htmlFor="fahrenheit">F°</label>
+              <label className="temp-label-holder" htmlFor="fahrenheit">F°</label>
             </div>
 
           </div>
@@ -76,7 +76,6 @@ class WeatherInformation extends Component {
               </h2>
               <div className="weather-icon-container">
                 <img className="weather-image" src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}/>
-
               </div>
               <h3 className="cloud-coverage">
                 {day.weather[0].description}
@@ -94,9 +93,9 @@ class WeatherInformation extends Component {
     return (
       <div className="weather-results">
         <NavBar/>
-        <Title/>
         <ResultNavBar/>
         {loading ? <LoadingPage/> : this.renderWeather(data)}
+        <Signature/>
       </div>
     );
   }
@@ -114,4 +113,4 @@ class WeatherInformation extends Component {
 //   );
 // }
 //
-export default WeatherInformation;
+export default ResultsPageWeather;

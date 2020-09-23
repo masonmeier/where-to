@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {QuizContext} from '../QuizProvider';
 import getCountryData from '../SQLCall';
-import ResultsPage from './ResultsPage';
+import SubmitPage from './SubmitPage';
 
 function ResultsCalculator(props) {
   const [countriesArray, setCountriesArray] = React.useState([]);
@@ -93,7 +93,7 @@ function ResultsCalculator(props) {
 
   return (
     <div className="resultsPage">
-      <ResultsPage result={result}/>
+      <SubmitPage result={result}/>
     </div>
   );
 }

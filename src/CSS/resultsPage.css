@@ -1,460 +1,113 @@
-/*Mobile design starts here*/
+.results-page {
+    width: 100%;
+}
 
-.getResultsHolder {
+.national-flag-holder {
+    width: 50%;
+    display: inline-block;
+}
+
+.national-flag {
+    width: 100%;
+    padding: 5%;
+    margin-top: -15%;
+}
+
+.result-page-stats {
+    width: 50%;
+    display: inline-block;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.stats-list-item {
+    margin-top: 2%;
+}
+
+.stats-header-holder {
     width: 100%;
     text-align: center;
 }
 
-.title-image-container {
+.stats-header {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.country-stats-header {
+    border-bottom: 1px solid black;
     margin-top: 2%;
 }
 
-.backgroundMask {
-    height: 100vh;
+
+/* news page */
+
+.news-container {
+    width: 100%;
 }
 
-.getResultsTextHolder {
-    margin-top: 50%;
-    margin-bottom: 20%;
+.news-page {
+    text-align: center;
 }
 
-.resultNavLink {
-    background-color: #a8aca7;
+.related-news {
+    margin-top: 3%;
+    display: inline-block;
+    width: 80%;
+    padding: 2%;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
-.resultNavLink:hover {
-    background-color: white;
+.news-list-item {
+    width: 50%;
+    display: inline-block;
 }
 
-.resultNavLinkText {
-    text-decoration: black;
+.article-text-holder {
+    display: inline-block;
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.article-text {
     color: black;
 }
 
-.loadingGif {
-    width: 100%;
-    margin-top: 30%;
-    margin-bottom: 50%;
-}
-
-.loadContainer {
-    background-color: #3199da;
+.news-article {
     height: 100%;
 }
 
-.flagHolder {
-    width: 80%;
-    height: 100%
+.news-list-item {
+    margin-top: 1%;
 }
 
-.flag {
-    width: 100%;
+.news-article-image {
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.resultsPage {
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-.titleImage {
-    margin-top: 0;
-    margin-bottom: 5%;
-}
-
-.resultsPageStats {
-    text-align: center;
-    position: relative;
-}
-
-.nationalStats {
-    padding-top: 2%;
-}
-
-.statsHeader {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 90%;
-    display: inline-block;
-    text-align: center;
-}
-
-.statsList {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
-}
-
-.statsListItem {
-    margin-top: 2%;
-    display: inline-block;
-    text-align: left;
-    border-bottom: #a8aca7 solid 1px;
-    width: 80%;
-}
-
-.flagHolder {
-    display: inline-block;
-}
-
-.countryStatsHeader {
-    margin-top: 5%;
-}
-
-.nationalStats {
-    width: 80%;
-    display: inline-block;
-    border: black solid 1px;
-}
-
-.resultsPageNews {
-    margin-bottom: 5%;
-}
-
-.newsContainer {
-    border-radius: 2%;
-    margin: auto;
-    width: 90%;
-    overflow: scroll;
-    border: 1px black solid;
-    height: 50vh;
-    background-color: lightgray;
-}
-
-.relatedNews {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    height: 40%;
-    padding-top: 5%;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.newsListItem {
-    min-height: 45%;
-    width: 80%;
-    list-style: none;
-    position: relative;
-    display: inline-block;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    text-decoration: none;
-    border: gray 1px solid;
-    background-color: white;
-    margin-top: 3%;;
-}
-
-.newsImage {
-    width: 100%;
-}
-
-
-.articleText {
-    text-align: left;
-    font-size: small;
-    text-decoration: none;
-    color: black;
-}
-
-.newsHeader {
-    margin-top: 2%;
-    width: 80%;
-    display: inline-block;
-}
-
-#container {
-    position: absolute;
-    min-height: 100vh;
-    min-width: 100vw;
-    z-index: -5;
-    overflow: scroll;
-}
-
-#container img {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
+@media screen and (max-width: 1200px) {
 
 }
 
-@-webkit-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes imgFade {
-    0% {
-        opacity: 1;
-    }
-    17% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    92% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#container img {
-    -webkit-animation-name: imgFade;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 32s;
-
-    -moz-animation-name: imgFade;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-duration: 32s;
-
-    -o-animation-name: imgFade;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-iteration-count: infinite;
-    -o-animation-duration: 32s;
-
-    animation-name: imgFade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 28s;
-}
-
-#container img:nth-of-type(1) {
-    -webkit-animation-delay: 28s;
-    -moz-animation-delay: 28s;
-    -o-animation-delay: 28s;
-    animation-delay: 28s;
-}
-
-#container img:nth-of-type(2) {
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    animation-delay: 24s;
-}
-
-#container img:nth-of-type(3) {
-    -webkit-animation-delay: 20s;
-    -moz-animation-delay: 20s;
-    -o-animation-delay: 20s;
-    animation-delay: 20s;
-}
-
-#container img:nth-of-type(4) {
-    -webkit-animation-delay: 16s;
-    -moz-animation-delay: 16s;
-    -o-animation-delay: 16s;
-    animation-delay: 16s;
-}
-
-#container img:nth-of-type(5) {
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    animation-delay: 12s;
-}
-
-#container img:nth-of-type(6) {
-    -webkit-animation-delay: 8s;
-    -moz-animation-delay: 8s;
-    -o-animation-delay: 8s;
-    animation-delay: 8s;
-}
-
-#container img:nth-of-type(7) {
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -o-animation-delay: 4s;
-    animation-delay: 4s;
-}
-
-#container img:nth-of-type(8) {
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    animation-delay: 0s;
-}
-
-.form-label {
-    font-size: x-large;
-}
-
-.text-muted {
-    font-size: large;
-    color: black !important;
-    margin-top: 10%;
-}
-
-.btn-primary {
-    font-size: x-large;
-}
-
-.form-check-label {
-    font-size: x-large;
-}
-
-#formBasicCheckbox {
-    height: 80%;
-}
-
-.articleText {
-    font-size: large;
-}
-
-/*Tablet design starts here*/
-
-@media (min-width: 800px) {
-    .nationalStats {
-        margin-bottom: 5%;
+@media screen and (max-width: 767px) {
+    .national-flag-holder {
+        display: block;
+        width: 100%;
+        padding-top: 20%;
     }
 
-    .statsListItem {
-        font-size: x-large;
+    .result-page-stats {
+        display: block;
+        width: 100%;
     }
 
-    .titleImage {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .title-image-container {
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-
-    .loadingGif {
-        width: 50%;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .loadContainer {
-        background-color: #3199da;
-        height: 100vh;
-    }
-
-}
-
-@media (min-width: 1080px) {
-    .resultsPage {
-        padding-bottom: 2.5%;
-    }
-
-    .title-image-container {
-        padding-top: 0;
-    }
-
-    .nav-tabs {
-        width: 80%;
-        margin: auto;
-    }
-
-    .statsHeader {
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-
-    .titleImage {
-        width: 80%;
-    }
-
-    .flag {
-        width: 20%;
-    }
-
-    .countryStatsHeader {
-        margin-top: 1%;
-    }
-
-    .nationalStats {
-        padding-top: 5px;
-    }
-
-    .resultsPageNews {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5%;
-    }
-
-    .newsContainer {
-        height: 10%;
-
-    }
-
-    div::-webkit-scrollbar {
-        display: none;
-    }
-
-    .newsListItem {
-        border-radius: 10px;
-        width: 40%;
+    .news-list-item {
         display: inline-block;
-    }
-
-    .newsImage {
-        border-radius: 10px;
-    }
-
-    .articleText {
-        position: relative;
+        width: 95%;
     }
 
 }

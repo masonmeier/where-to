@@ -7,7 +7,7 @@ import UserInput from './components/pages/questions/Input';
 import ResultsPageNews from './components/pages/ResultsPageNews';
 import ResultsCalculator from './components/pages/ResultsCalculator';
 import ResultsPageStats from './components/pages/ResultsPageStats';
-import WeatherInformation from './components/pages/ResultInformation/WeatherInformation';
+import ResultsPageWeather from './components/pages/ResultsPageWeather';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     },
     {
       path: '/results/weather',
-      component: WeatherInformation,
+      component: ResultsPageWeather,
     },
     {
       path: '/input',
