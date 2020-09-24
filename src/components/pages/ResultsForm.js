@@ -4,6 +4,7 @@ import React from 'react';
 import '../../CSS/formPage.css';
 import {QuizContext} from '../QuizProvider';
 import Signature from '../Structure/Signature';
+import {remoteServerURL} from '../QuizProvider';
 
 
 class ResultsForm extends React.Component {
@@ -13,6 +14,7 @@ class ResultsForm extends React.Component {
     super(props);
     this.state = {
       loadPage: props.getLoadingPage,
+
       checked: true,
       setChecked: true,
       guessInput: '',
@@ -28,34 +30,34 @@ class ResultsForm extends React.Component {
 
   //to-do: create user data submission
 
-  // submitUserData = () => {
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //       title: 'User Input Submission',
-  //       guessInput: this.state.guessInput,
-  //       nameText: this.state.nameText
-  //     })
-  //   };
-  //   fetch(remoteServerURL, requestOptions)
-  //     .then(res => res.json())
-  //     .then(
-  //       (result) => {
-  //         return result;
-  //       },
-  //       (error) => {
-  //         throw error;
-  //       }
-  //     );
-  // };
+  submitUserData = () => {
+    const requestOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        title: 'User Input Submission',
+        guessInput: this.state.guessInput,
+        nameText: this.state.nameText
+      })
+    };
+    fetch(`${remoteServerURL}/submit`, requestOptions)
+      .then(res => res.json())
+      .then(
+        (result) => {
+          return result;
+        },
+        (error) => {
+          throw error;
+        }
+      );
+  };
 
   render() {
     return (
       <div className="form-page">
         <div className="form-holder">
-          <Form classname="submission-form">
-            <Form.Group classname='name-submission-group'>
+          <Form className="submission-form">
+            <Form.Group className='name-submission-group'>
               <Form.Label>What's your name?</Form.Label>
               <Form.Control
                 onChange={(e) => {
@@ -86,6 +88,8 @@ class ResultsForm extends React.Component {
               className="submit-button"
               onClick={() => {
                 this.state.loadPage();
+                this.submitUserData();
+                console.log(remoteServerURL, 'remote server url check');
               }}
               disabled={this.state.guessInput.length === 0 || this.state.nameText.length === 0}
               variant="primary"

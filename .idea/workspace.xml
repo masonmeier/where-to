@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Structure/Signature.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/formPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/formPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/landingPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/questionBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/questionBody.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/resultsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultsPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/weatherPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/weatherPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/Background.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/ResultsForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LoadingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LoadingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/NewsInformation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultInformation/WeatherInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SubmitPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/webclip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/questionValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/questionValues.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +40,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -173,7 +150,8 @@
       <workItem from="1600474218438" duration="4600000" />
       <workItem from="1600633858997" duration="20544000" />
       <workItem from="1600721110535" duration="25511000" />
-      <workItem from="1600804902223" duration="4672000" />
+      <workItem from="1600804902223" duration="5385000" />
+      <workItem from="1600900722965" duration="6824000" />
     </task>
     <servers />
   </component>
@@ -245,11 +223,11 @@
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
     <state x="2497" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600641995212" />
-    <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1" timestamp="1600804907859">
+    <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1" timestamp="1600900841633">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
     <state x="1914" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600637163464" />
-    <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600804907859" />
+    <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600900841633" />
     <state x="346" y="-23" width="1150" height="1050" key="find.popup" timestamp="1600390246044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -302,7 +280,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/pages/ResultsForm.js</url>
-          <line>61</line>
+          <line>77</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
