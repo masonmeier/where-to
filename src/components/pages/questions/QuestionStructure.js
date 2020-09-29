@@ -33,14 +33,6 @@ function QuestionStructure(props) {
   const questionNumber = questionObj.questionNumber;
   const questionText = questionObj.questionText;
   const fact = questionObj.questionFact;
-  const quality = questionObj.quality;
-  const inputType = questionObj.inputType;
-  const inputReference = questionObj.inputReference;
-  const leftVal = questionObj.leftVal;
-  const rightVal = questionObj.rightVal;
-  const className = questionObj.className;
-  const startVal = questionObj.value;
-  const visual = questionObj.visual;
 
 
   return (

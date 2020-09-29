@@ -28,7 +28,7 @@ function LandingPage() {
               <div className="hero-image-mask">
                 <img src={planeWindow}
                      sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 39vw"
-                     alt="title image" className="hero-image"/>
+                     alt="moving title" className="hero-image"/>
               </div>
             </div>
           </header>

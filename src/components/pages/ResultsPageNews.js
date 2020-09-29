@@ -1,4 +1,4 @@
-import React, {Component, useContext} from 'react';
+import React, {Component} from 'react';
 import LoadingPage from './LoadingPage';
 import {remoteServerURL} from '../QuizProvider';
 import {QuizContext} from '../QuizProvider';
@@ -49,11 +49,11 @@ class ResultsPageNews extends Component {
               <li className='news-list-item' key={item.url}>
                 <div className="news-article">
                   <div className="article-text-holder">
-                    <a className='article-text' href={item.url} target='_blank'>
+                    <a className='article-text' href={item.url} target='_blank' rel="noopener noreferrer">
                       {item.title}
                     </a>
                   </div>
-                  <img alt="News Story Image" className="news-article-image" src={item.urlToImage}/>
+                  <img alt="News Story" className="news-article-image" src={item.urlToImage}/>
                 </div>
               </li>
             ))}

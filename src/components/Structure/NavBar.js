@@ -20,10 +20,14 @@ const NavBar = (props) => {
         <nav className="w-container">
           <ul className="nav-grid">
             <li id="w-node-ded4bd0810a5-d3ab1131" className="logo-image-mask">
-              <img src={titleimage} width="80" height="80" alt="title image" className="nav-logo"/>
+              <img src={titleimage} width="80" height="80" alt="title" className="nav-logo"/>
             </li>
-            <li><a href="#" className="nav-link">Contact</a></li>
-            <li className="restart-container"><a onClick={restart} className="button w-button">Restart Quiz</a></li>
+            <li>
+              <p className="nav-link">Contact</p>
+            </li>
+            <li className="restart-container">
+              <p onClick={restart} className="button w-button">Restart Quiz</p>
+            </li>
           </ul>
         </nav>
       </header>

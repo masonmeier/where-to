@@ -1,4 +1,3 @@
-import React from 'react';
 import {remoteServerURL} from './QuizProvider';
 
 const getCountryData = () => {

@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSS/resultsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultsPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-1600.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-800.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +60,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -152,6 +172,7 @@
       <workItem from="1600721110535" duration="25511000" />
       <workItem from="1600804902223" duration="5385000" />
       <workItem from="1600900722965" duration="7222000" />
+      <workItem from="1601417831448" duration="961000" />
     </task>
     <servers />
   </component>
@@ -166,11 +187,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599709756397" />
-    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600751873180">
+    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600918829948">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
     <state x="690" y="278" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1595979787048" />
-    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600751873180" />
+    <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600918829948" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1593827065266" />
     <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596145900042">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -243,12 +264,12 @@
     </state>
     <state x="531" y="238" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597277725728" />
     <state x="2345" y="189" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600738975554" />
-    <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup" timestamp="1600723425738">
+    <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup" timestamp="1600927784861">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
     <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595543830027" />
     <state x="623" y="228" width="840" height="661" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600638060090" />
-    <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600723425738" />
+    <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600927784861" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594259898428" />
   </component>
   <component name="XDebuggerManager">

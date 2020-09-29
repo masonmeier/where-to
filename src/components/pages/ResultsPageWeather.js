@@ -75,7 +75,8 @@ class ResultsPageWeather extends Component {
                 {day.date.toDateString()}
               </h2>
               <div className="weather-icon-container">
-                <img className="weather-image" src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}/>
+                <img alt="daily-weather-icon" className="weather-image"
+                     src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}/>
               </div>
               <h3 className="cloud-coverage">
                 {day.weather[0].description}

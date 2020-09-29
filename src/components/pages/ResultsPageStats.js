@@ -29,7 +29,8 @@ const ResultsPageStats = (props) => {
             <li className="stats-list-item">At least {result.size_of_gov}% of the population works for the government.
             </li>
             <li className="stats-list-item">{result.country} ranks {result.gpi_rank_inverse} out of 158 on the <a
-              href="http://visionofhumanity.org/indexes/global-peace-index/" target="_blank">Global Peace Index</a>
+              href="http://visionofhumanity.org/indexes/global-peace-index/" target="_blank" rel="noopener noreferrer">Global
+              Peace Index</a>
             </li>
             <li className="stats-list-item">At least {result.percentage_non_religious}% of people in this nation
               identify
