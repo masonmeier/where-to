@@ -49,8 +49,6 @@ class QuizProvider extends Component {
     this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1});
   };
 
-  getRemoteServerURL = () => this.state.remoteServerURL;
-
   getCurrentQuestionNum = () => this.state.currentQuestionIndex;
   getCurrentQuestionObj = () => this.state.questionValues[this.getCurrentQuestionNum()];
   getUserAnswers = () => this.state.answerValues;

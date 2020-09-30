@@ -3,27 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/resultsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/resultsPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SQLCall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/backgrounds/bg8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-1080.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-1600.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/images/lpimages/title-p-800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +41,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -172,7 +153,7 @@
       <workItem from="1600721110535" duration="25511000" />
       <workItem from="1600804902223" duration="5385000" />
       <workItem from="1600900722965" duration="7222000" />
-      <workItem from="1601417831448" duration="961000" />
+      <workItem from="1601417831448" duration="2792000" />
     </task>
     <servers />
   </component>
@@ -249,10 +230,10 @@
     </state>
     <state x="1914" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600637163464" />
     <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600900841633" />
-    <state x="346" y="-23" width="1150" height="1050" key="find.popup" timestamp="1600390246044">
+    <state x="346" y="-23" width="1150" height="1050" key="find.popup" timestamp="1601426503120">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="346" y="-23" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600390246044" />
+    <state x="346" y="-23" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601426503120" />
     <state x="2106" y="163" width="920" height="603" key="find.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1599260132694" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
