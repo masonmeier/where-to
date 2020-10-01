@@ -23,8 +23,8 @@
     "require-all": "^3.0.0"
   },
   "scripts": {
-    "start": "export PORT=3000 react-scripts start",
-    "startwin": "set PORT=3000 && react-scripts start",
+    "start": "react-scripts start",
+    "startwin": "set PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
