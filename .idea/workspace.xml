@@ -4,7 +4,7 @@
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +153,8 @@
       <workItem from="1600721110535" duration="25511000" />
       <workItem from="1600804902223" duration="5385000" />
       <workItem from="1600900722965" duration="7222000" />
-      <workItem from="1601417831448" duration="2792000" />
+      <workItem from="1601417831448" duration="5077000" />
+      <workItem from="1601502221122" duration="2881000" />
     </task>
     <servers />
   </component>
@@ -230,12 +231,13 @@
     </state>
     <state x="1914" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600637163464" />
     <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600900841633" />
-    <state x="346" y="-23" width="1150" height="1050" key="find.popup" timestamp="1601426503120">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="346" y="-24" width="1150" height="1080" key="find.popup" timestamp="1601517817264">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="346" y="-23" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601426503120" />
+    <state x="346" y="-23" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601427922204" />
     <state x="2106" y="163" width="920" height="603" key="find.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1599260132694" />
     <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
+    <state x="346" y="-24" width="1150" height="1080" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601517817264" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>

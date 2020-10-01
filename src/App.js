@@ -47,7 +47,6 @@ function App() {
       exact path={path}
       component={component}
       key={key}
-
     />
   );
 
