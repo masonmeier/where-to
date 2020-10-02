@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,8 @@
       <workItem from="1600804902223" duration="5385000" />
       <workItem from="1600900722965" duration="7222000" />
       <workItem from="1601417831448" duration="5077000" />
-      <workItem from="1601502221122" duration="3232000" />
+      <workItem from="1601502221122" duration="6262000" />
+      <workItem from="1601672543217" duration="2847000" />
     </task>
     <servers />
   </component>
@@ -164,10 +166,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599709756397">
+    <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601680481725">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599709756397" />
+    <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1601680481725" />
     <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600918829948">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
