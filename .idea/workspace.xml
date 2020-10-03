@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/SubmitPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/SubmitPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../back-end/where-to-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Roman Homework Assistance" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,18 +42,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
-      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
       <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
+      <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -155,7 +156,11 @@
       <workItem from="1600900722965" duration="7222000" />
       <workItem from="1601417831448" duration="5077000" />
       <workItem from="1601502221122" duration="6262000" />
-      <workItem from="1601672543217" duration="2847000" />
+      <workItem from="1601672543217" duration="3926000" />
+      <workItem from="1601683017677" duration="88000" />
+      <workItem from="1601689356939" duration="381000" />
+      <workItem from="1601697555675" duration="2152000" />
+      <workItem from="1601762251888" duration="15000" />
     </task>
     <servers />
   </component>
@@ -181,11 +186,12 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596145900042" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600049846127">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1601683102926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595030417322" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600049846127" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1601683102926" />
     <state width="996" height="349" key="GridCell.Tab.0.bottom" timestamp="1596583261994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -272,7 +278,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/pages/SubmitPage.js</url>
-          <line>15</line>
+          <line>14</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

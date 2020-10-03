@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import LoadingPage from './LoadingPage';
-// import '../../CSS/resultsPage.css';
 import NavBar from '../Structure/NavBar';
 import ResultsForm from './ResultsForm';
 
