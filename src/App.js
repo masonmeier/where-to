@@ -10,7 +10,7 @@ import ResultsPageStats from './components/pages/ResultsPageStats';
 import ResultsPageWeather from './components/pages/ResultsPageWeather';
 
 
-function App(props) {
+function App() {
 
   const routes = [
     {

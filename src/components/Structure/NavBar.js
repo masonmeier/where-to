@@ -18,7 +18,7 @@ const NavBar = (props) => {
     <div className='navBar'>
       <header id="nav" className="sticky-nav">
         <nav className="w-container">
-          <ul classame="nav-grid">
+          <ul className="nav-grid">
             <li id="w-node-ded4bd0810a5-d3ab1131" className="logo-image-mask">
               <img src={titleimage} width="80" height="80" alt="title" className="nav-logo"/>
             </li>
