@@ -160,6 +160,15 @@ li {
     font-family: Montserrat, sans-serif;
 }
 
+.lp-hero-text {
+    width: 50%;
+}
+
+.paragraph {
+    text-align: justify;
+    font-size: large;
+}
+
 @media screen and (max-width: 991px) {
     .hero-image-mask {
         display: inline-block;
@@ -170,9 +179,7 @@ li {
     }
 
     .hero {
-        margin-left: 15%;
         padding-top: 15%;
-        width: 80%;
     }
 }
 
@@ -183,7 +190,7 @@ li {
     }
 
     .flex-container {
-        margin-left: 10%;
+        /*margin-left: 10%;*/
         text-align: center;
         position: relative;
         width: 100%;
@@ -200,7 +207,7 @@ li {
     }
 
     .hero {
-        width: 80%;
+        width: 100%;
         padding: 40px 20px;
     }
 
@@ -242,7 +249,7 @@ li {
     }
 
     .lp-hero-text {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -250,6 +257,7 @@ li {
 
     .hero {
         width: 85%;
+        padding-left: 0;
     }
 
     .sticky-nav {

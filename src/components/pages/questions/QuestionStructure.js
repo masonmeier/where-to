@@ -7,8 +7,6 @@ import political from '../images/QuestionIcons/political.png';
 import social from '../images/QuestionIcons/social.png';
 import NavBar from '../../Structure/NavBar';
 import UserInput from './Input';
-import '../../../CSS/questionBody.css';
-import '../../../CSS/questionBody.css';
 import '../../../CSS/webflow.css';
 import '../../../CSS/normalize.css';
 
@@ -43,9 +41,9 @@ function QuestionStructure(props) {
           <div className="question-explanation w-col w-col-3">
             <div className="rich-text-block w-richtext">
               <h2>{expHeader}</h2>
-              <p>{expText}</p>
+              <p className="question-embellish">{expText}</p>
               <h4>{importanceHeader}</h4>
-              <p>{importanceText}</p>
+              <p className="question-embellish">{importanceText}</p>
             </div>
           </div>
           <div className="question-interaction w-col w-col-9">

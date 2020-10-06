@@ -5,7 +5,7 @@ import education from '../images/QuestionIcons/education.png';
 import environment from '../images/QuestionIcons/environment.png';
 import political from '../images/QuestionIcons/political.png';
 import social from '../images/QuestionIcons/social.png';
-import '../../../CSS/questionBody.css';
+
 
 //images are initialized into an object to allow react to read them
 //for each re-render

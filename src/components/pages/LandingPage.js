@@ -22,7 +22,7 @@ function LandingPage() {
                 <h1 className="heading">Have you ever wondered...</h1>
                 <p className="paragraph">Where in the world you would actually fit
                   in?<br/>‍<br/>Where-To is an application that tests your preferences against dozens of
-                  international <br/>ranking metrics to determine where you would actually enjoy living!</p>
+                  international ranking metrics to determine where you would actually enjoy living!</p>
                 <button className="start-button w-button" onClick={startQuiz}>Start</button>
               </div>
               <div className="hero-image-mask">
