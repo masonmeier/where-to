@@ -256,7 +256,7 @@ li {
 @media screen and (max-width: 479px) {
 
     .hero {
-        width: 85%;
+        width: 80%;
         padding-left: 0;
     }
 
@@ -316,6 +316,15 @@ li {
 }
 
 @media screen and (max-width: 479px) {
+    .landing-column {
+        text-align: center;
+    }
+
+    .hero {
+        margin-right: 0;
+        display: inline-block;
+    }
+
     #w-node-ded4bd0810a5-d3ab1131 {
         -ms-grid-column-align: center;
         justify-self: center;
