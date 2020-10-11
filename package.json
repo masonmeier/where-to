@@ -21,13 +21,13 @@
     "react-promise-tracker": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-script-tag": "^1.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "require-all": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "startwin": "set PORT=80 && react-scripts start",
-    "startlin": "EXPORT PORT=443 && react-scripts start",
+    "startlin": "EXPORT PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -51,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
   }
 }
