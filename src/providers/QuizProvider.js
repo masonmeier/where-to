@@ -68,5 +68,5 @@ class QuizProvider extends Component {
 
 export default QuizProvider;
 export const QuizContext = React.createContext();
-export const remoteServerURL = "https://where-to.world/backend";
-// export const remoteServerURL = "http://localhost:3002";
+// export const remoteServerURL = "https://where-to.world/backend";
+export const remoteServerURL = "http://localhost:3002";

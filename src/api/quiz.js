@@ -1,7 +1,7 @@
 import { remoteServerURL } from "providers/QuizProvider";
 
-const getCountryData = () => {
-  const CountryData = fetch(remoteServerURL)
+export const getCountryData = () => {
+  return fetch(remoteServerURL)
     .then((res) => res.json())
     .then(
       (result) => {
@@ -11,8 +11,4 @@ const getCountryData = () => {
         throw error;
       }
     );
-  // return Promise.resolve(CountryData);
-  return CountryData;
 };
-
-export default getCountryData;

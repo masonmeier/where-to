@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { QuizContext } from "providers/QuizProvider";
-import getCountryData from "components/SQLCall";
+import { getCountryData } from "api/quiz";
 import SubmitPage from "components/pages/SubmitPage";
 
 function ResultsCalculator(props) {

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CSS/formPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/landingPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/resultsPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/weatherPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/webflow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/Title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SQLCall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsCalculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/QuizProvider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +165,7 @@
       <workItem from="1602112656033" duration="3459000" />
       <workItem from="1602201457118" duration="245000" />
       <workItem from="1602461386763" duration="26000" />
+      <workItem from="1602462935018" duration="16000" />
     </task>
     <servers />
   </component>
@@ -317,15 +305,6 @@
           <url>file://$PROJECT_DIR$/src/components/pages/ResultsPageWeather.js</url>
           <line>43</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/QuizProvider.js</url>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/questionValues.js</url>
-          <line>435</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
