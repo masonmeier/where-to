@@ -70,3 +70,4 @@ export default QuizProvider;
 export const QuizContext = React.createContext();
 // export const remoteServerURL = "https://where-to.world/backend";
 export const remoteServerURL = "http://localhost:3002";
+console.log(process.env.NODE_ENV, "node env test");

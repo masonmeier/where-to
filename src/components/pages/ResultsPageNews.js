@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import LoadingPage from "components/pages/LoadingPage";
-import { remoteServerURL } from "providers/QuizProvider";
+import { remoteServerURL } from "constants/index";
 import { QuizContext } from "providers/QuizProvider";
 import "styles/resultsPage.css";
 import NavBar from "components/structure/NavBar";

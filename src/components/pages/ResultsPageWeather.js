@@ -4,7 +4,7 @@ import { QuizContext } from "providers/QuizProvider";
 import ResultNavBar from "components/structure/ResultNavBar";
 import NavBar from "components/structure/NavBar";
 import "styles/weatherPage.css";
-import { remoteServerURL } from "providers/QuizProvider";
+import { remoteServerURL } from "constants/index";
 import Signature from "components/structure/Signature";
 
 class ResultsPageWeather extends Component {

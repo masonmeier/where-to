@@ -4,7 +4,7 @@ import React from "react";
 import "styles/formPage.css";
 import { QuizContext } from "providers/QuizProvider";
 import Signature from "components/structure/Signature";
-import { remoteServerURL } from "providers/QuizProvider";
+import { remoteServerURL } from "constants/index";
 
 class ResultsForm extends React.Component {
   static contextType = QuizContext;
