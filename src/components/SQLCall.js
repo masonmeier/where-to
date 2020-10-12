@@ -1,4 +1,4 @@
-import { remoteServerURL } from "components/QuizProvider";
+import { remoteServerURL } from "providers/QuizProvider";
 
 const getCountryData = () => {
   const CountryData = fetch(remoteServerURL)

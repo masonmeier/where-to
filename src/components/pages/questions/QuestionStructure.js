@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { QuizContext } from "components/QuizProvider";
+import { QuizContext } from "providers/QuizProvider";
 import economic from "images/QuestionIcons/economic.png";
 import education from "images/QuestionIcons/education.png";
 import environment from "images/QuestionIcons/environment.png";

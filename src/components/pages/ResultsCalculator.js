@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { QuizContext } from "components/QuizProvider";
+import { QuizContext } from "providers/QuizProvider";
 import getCountryData from "components/SQLCall";
 import SubmitPage from "components/pages/SubmitPage";
 

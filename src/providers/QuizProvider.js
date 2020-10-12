@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import questionValues from "components/questionValues";
+import questionValues from "providers/questionValues";
 
 class QuizProvider extends Component {
   constructor(props) {

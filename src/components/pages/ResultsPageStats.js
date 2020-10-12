@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ResultNavBar from "components/structure/ResultNavBar";
-import { QuizContext } from "components/QuizProvider";
+import { QuizContext } from "providers/QuizProvider";
 import NavBar from "components/structure/NavBar";
 import "styles/resultsPage.css";
 import Signature from "components/structure/Signature";

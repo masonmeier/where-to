@@ -2,9 +2,9 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React from "react";
 import "styles/formPage.css";
-import { QuizContext } from "components/QuizProvider";
+import { QuizContext } from "providers/QuizProvider";
 import Signature from "components/structure/Signature";
-import { remoteServerURL } from "components/QuizProvider";
+import { remoteServerURL } from "providers/QuizProvider";
 
 class ResultsForm extends React.Component {
   static contextType = QuizContext;

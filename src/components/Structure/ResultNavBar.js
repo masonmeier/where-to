@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Nav from "react-bootstrap/Nav";
 import { useHistory } from "react-router-dom";
-import { QuizContext } from "components/QuizProvider";
+import { QuizContext } from "providers/QuizProvider";
 
 const ResultNavBar = (props) => {
   const quizContext = useContext(QuizContext);
