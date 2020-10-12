@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import LoadingPage from './LoadingPage';
-import {remoteServerURL} from '../QuizProvider';
-import {QuizContext} from '../QuizProvider';
-import '../../CSS/resultsPage.css';
-import NavBar from '../Structure/NavBar';
-import ResultNavBar from '../Structure/ResultNavBar';
+import React, { Component } from "react";
+import LoadingPage from "components/pages/LoadingPage";
+import { remoteServerURL } from "components/QuizProvider";
+import { QuizContext } from "components/QuizProvider";
+import "CSS/resultsPage.css";
+import NavBar from "components/Structure/NavBar";
+import ResultNavBar from "components/Structure/ResultNavBar";
 
 class ResultsPageNews extends Component {
   static contextType = QuizContext;
@@ -16,18 +16,18 @@ class ResultsPageNews extends Component {
       title: null,
       urlToImage: null,
       url: null,
-      country: 'england',
+      country: "england",
     };
   }
 
   componentDidMount() {
     console.log(this.context);
     this.setState({
-      country: this.context.resultCountry.country
+      country: this.context.resultCountry.country,
     });
 
     fetch(`${remoteServerURL}/news?q=` + this.state.country)
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(
         (result) => {
           return result;
@@ -36,24 +36,33 @@ class ResultsPageNews extends Component {
           throw error;
         }
       )
-      .then(json => this.setState({loading: false, data: json}));
+      .then((json) => this.setState({ loading: false, data: json }));
   }
 
-  renderList = data => {
+  renderList = (data) => {
     return (
       <div className="news-container">
         <div className="news-page">
           <h2 className="news-page-header">News from {this.state.country}</h2>
           <ul className="related-news">
-            {data.articles.map(item => (
-              <li className='news-list-item' key={item.url}>
+            {data.articles.map((item) => (
+              <li className="news-list-item" key={item.url}>
                 <div className="news-article">
                   <div className="article-text-holder">
-                    <a className='article-text' href={item.url} target='_blank' rel="noopener noreferrer">
+                    <a
+                      className="article-text"
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {item.title}
                     </a>
                   </div>
-                  <img alt="News Story" className="news-article-image" src={item.urlToImage}/>
+                  <img
+                    alt="News Story"
+                    className="news-article-image"
+                    src={item.urlToImage}
+                  />
                 </div>
               </li>
             ))}
@@ -64,18 +73,15 @@ class ResultsPageNews extends Component {
   };
 
   render() {
-    const {loading, data} = this.state;
+    const { loading, data } = this.state;
     return (
       <div>
-        <NavBar/>
-        <ResultNavBar/>
-        {loading ? <LoadingPage/> : this.renderList(data)}
+        <NavBar />
+        <ResultNavBar />
+        {loading ? <LoadingPage /> : this.renderList(data)}
       </div>
     );
   }
-
 }
 
-
 export default ResultsPageNews;
-

@@ -1,14 +1,14 @@
-import React, {useContext} from 'react';
-import {QuizContext} from '../../QuizProvider';
-import economic from '../images/QuestionIcons/economic.png';
-import education from '../images/QuestionIcons/education.png';
-import environment from '../images/QuestionIcons/environment.png';
-import political from '../images/QuestionIcons/political.png';
-import social from '../images/QuestionIcons/social.png';
-import NavBar from '../../Structure/NavBar';
-import UserInput from './Input';
-import '../../../CSS/webflow.css';
-import '../../../CSS/normalize.css';
+import React, { useContext } from "react";
+import { QuizContext } from "components/QuizProvider";
+import economic from "components/pages/images/QuestionIcons/economic.png";
+import education from "components/pages/images/QuestionIcons/education.png";
+import environment from "components/pages/images/QuestionIcons/environment.png";
+import political from "components/pages/images/QuestionIcons/political.png";
+import social from "components/pages/images/QuestionIcons/social.png";
+import NavBar from "components/Structure/NavBar";
+import UserInput from "components/pages/questions/Input";
+import "CSS/webflow.css";
+import "CSS/normalize.css";
 
 const categoryToImage = {
   economic: economic,
@@ -17,7 +17,6 @@ const categoryToImage = {
   political: political,
   social: social,
 };
-
 
 // <QuestionBody history={props.history}/>
 
@@ -32,10 +31,9 @@ function QuestionStructure(props) {
   const questionText = questionObj.questionText;
   const fact = questionObj.questionFact;
 
-
   return (
     <div className="question-body">
-      <NavBar/>
+      <NavBar />
       <div className="question-structure">
         <div className="w-row">
           <div className="question-explanation w-col w-col-3">
@@ -51,20 +49,30 @@ function QuestionStructure(props) {
               <div className="flex-container w-container">
                 <div className="primary-question-body">
                   <h1 className="question-number">Question {questionNumber}</h1>
-                  <p className="question-text"><strong>{questionText}</strong></p>
+                  <p className="question-text">
+                    <strong>{questionText}</strong>
+                  </p>
                   <div className="left-input-val-holder">
-                    <p className="q-val"><strong>{questionObj.leftVal}</strong></p>
+                    <p className="q-val">
+                      <strong>{questionObj.leftVal}</strong>
+                    </p>
                   </div>
                   <div className="right-input-val-holder">
-                    <p className="q-val"><strong>{questionObj.rightVal}</strong></p>
+                    <p className="q-val">
+                      <strong>{questionObj.rightVal}</strong>
+                    </p>
                   </div>
-                  <UserInput history={props.history}/>
-                  <p className="question-fact"><i>{fact}</i></p>
+                  <UserInput history={props.history} />
+                  <p className="question-fact">
+                    <i>{fact}</i>
+                  </p>
                 </div>
                 <div className="hero-image-mask">
                   <img
                     src={categoryToImage[questionObj.visual]}
-                    alt="" className="question-image"/>
+                    alt=""
+                    className="question-image"
+                  />
                 </div>
               </div>
             </header>

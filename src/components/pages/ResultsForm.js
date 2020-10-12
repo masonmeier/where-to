@@ -1,11 +1,10 @@
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import React from 'react';
-import '../../CSS/formPage.css';
-import {QuizContext} from '../QuizProvider';
-import Signature from '../Structure/Signature';
-import {remoteServerURL} from '../QuizProvider';
-
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import React from "react";
+import "CSS/formPage.css";
+import { QuizContext } from "components/QuizProvider";
+import Signature from "components/Structure/Signature";
+import { remoteServerURL } from "components/QuizProvider";
 
 class ResultsForm extends React.Component {
   static contextType = QuizContext;
@@ -17,31 +16,30 @@ class ResultsForm extends React.Component {
 
       checked: true,
       setChecked: true,
-      guessInput: '',
-      nameText: '',
-
+      guessInput: "",
+      nameText: "",
     };
     this.setCheck = this.setCheck.bind(this);
   }
 
   setCheck() {
-    this.setState({checked: !this.state.checked});
+    this.setState({ checked: !this.state.checked });
   }
 
   //to-do: create user data submission
 
   submitUserData = () => {
     const requestOptions = {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        title: 'User Input Submission',
+        title: "User Input Submission",
         guessInput: this.state.guessInput,
-        nameText: this.state.nameText
-      })
+        nameText: this.state.nameText,
+      }),
     };
     fetch(`${remoteServerURL}/submit`, requestOptions)
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(
         (result) => {
           return result;
@@ -57,14 +55,15 @@ class ResultsForm extends React.Component {
       <div className="form-page">
         <div className="form-holder">
           <Form className="submission-form">
-            <Form.Group className='name-submission-group'>
+            <Form.Group className="name-submission-group">
               <Form.Label>What's your name?</Form.Label>
               <Form.Control
                 onChange={(e) => {
-                  this.setState({nameText: e.target.value});
+                  this.setState({ nameText: e.target.value });
                 }}
                 type="text"
-                placeholder="Enter Your Name"/>
+                placeholder="Enter Your Name"
+              />
             </Form.Group>
 
             <Form.Group className="guess-submission-group">
@@ -73,7 +72,7 @@ class ResultsForm extends React.Component {
                 type="text"
                 placeholder="Your Guess"
                 onChange={(e) => {
-                  this.setState({guessInput: e.target.value});
+                  this.setState({ guessInput: e.target.value });
                 }}
               />
             </Form.Group>
@@ -82,16 +81,20 @@ class ResultsForm extends React.Component {
                 checked={this.state.checked}
                 onChange={this.setCheck}
                 type="checkbox"
-                label="I accept that my name and guess will be saved"/>
+                label="I accept that my name and guess will be saved"
+              />
             </Form.Group>
             <Button
               className="submit-button"
               onClick={() => {
                 this.state.loadPage();
                 this.submitUserData();
-                console.log(remoteServerURL, 'remote server url check');
+                console.log(remoteServerURL, "remote server url check");
               }}
-              disabled={this.state.guessInput.length === 0 || this.state.nameText.length === 0}
+              disabled={
+                this.state.guessInput.length === 0 ||
+                this.state.nameText.length === 0
+              }
               variant="primary"
               // type="submit"
             >
@@ -100,14 +103,16 @@ class ResultsForm extends React.Component {
           </Form>
         </div>
         <div className="submit-image-holder">
-          <img className="submit-image" alt="submission" src={require('../pages/images/lpimages/7561-planet2.gif')}/>
+          <img
+            className="submit-image"
+            alt="submission"
+            src={require("components/pages/images/lpimages/7561-planet2.gif")}
+          />
         </div>
-        <Signature/>
+        <Signature />
       </div>
-
     );
   }
-
 }
 
 export default ResultsForm;

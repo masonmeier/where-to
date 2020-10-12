@@ -1,11 +1,10 @@
-import React, {useContext} from 'react';
-import {QuizContext} from '../../QuizProvider';
-import economic from '../images/QuestionIcons/economic.png';
-import education from '../images/QuestionIcons/education.png';
-import environment from '../images/QuestionIcons/environment.png';
-import political from '../images/QuestionIcons/political.png';
-import social from '../images/QuestionIcons/social.png';
-
+import React, { useContext } from "react";
+import { QuizContext } from "components/QuizProvider";
+import economic from "components/pages/images/QuestionIcons/economic.png";
+import education from "components/pages/images/QuestionIcons/education.png";
+import environment from "components/pages/images/QuestionIcons/environment.png";
+import political from "components/pages/images/QuestionIcons/political.png";
+import social from "components/pages/images/QuestionIcons/social.png";
 
 //images are initialized into an object to allow react to read them
 //for each re-render
@@ -17,7 +16,6 @@ const categoryToImage = {
   social: social,
 };
 
-
 function QuestionBody(props) {
   const quizContext = useContext(QuizContext);
   const questionObj = quizContext.getCurrentQuestionObj();
@@ -25,7 +23,11 @@ function QuestionBody(props) {
   return (
     <div className="questionBody">
       <div className="questionIconContainer">
-        <img className="questionIcon" alt="question icon" src={categoryToImage[questionObj.visual]}/>
+        <img
+          className="questionIcon"
+          alt="question icon"
+          src={categoryToImage[questionObj.visual]}
+        />
       </div>
       <div className="questionTextHolder">
         <p className="questionText">{questionObj.text}</p>
@@ -36,7 +38,6 @@ function QuestionBody(props) {
       <div className="rightInputValHolder">
         <p className="questionText">{questionObj.rightVal}</p>
       </div>
-
     </div>
   );
 }

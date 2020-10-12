@@ -1,12 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import LandingPage from "../pages/LandingPage";
-import QuestionStructure from "../pages/questions/QuestionStructure";
-import UserInput from "../pages/questions/Input";
-import ResultsPageNews from "../pages/ResultsPageNews";
-import ResultsCalculator from "../pages/ResultsCalculator";
-import ResultsPageStats from "../pages/ResultsPageStats";
-import ResultsPageWeather from "../pages/ResultsPageWeather";
+import LandingPage from "components/pages/LandingPage";
+import QuestionStructure from "components/pages/questions/QuestionStructure";
+import UserInput from "components/pages/questions/Input";
+import ResultsPageNews from "components/pages/ResultsPageNews";
+import ResultsCalculator from "components/pages/ResultsCalculator";
+import ResultsPageStats from "components/pages/ResultsPageStats";
+import ResultsPageWeather from "components/pages/ResultsPageWeather";
 
 export default function Routes() {
   return (

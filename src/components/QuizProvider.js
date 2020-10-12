@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
-import questionValues from './questionValues';
-
+import React, { Component } from "react";
+import questionValues from "components/questionValues";
 
 class QuizProvider extends Component {
-
   constructor(props) {
     super(props);
 
@@ -31,29 +29,31 @@ class QuizProvider extends Component {
 
   updateProviderResult = (countryObject) => {
     //this function takes in the country object and saves it to provider state
-    this.setState({resultCountry: countryObject});
+    this.setState({ resultCountry: countryObject });
   };
   //add a thing that allows us to compare peoples current country to their desired country.
-
 
   //setQval pushes the user answer to the state array answervalues
 
   setQVal = (qVal) => {
     const answerVal = this.state.answerValues;
     answerVal.push(qVal);
-    this.setState({answerValues: answerVal}, () => {
-    });
+    this.setState({ answerValues: answerVal }, () => {});
   };
 
   setQBody = () => {
-    this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1});
+    this.setState({
+      currentQuestionIndex: this.state.currentQuestionIndex + 1,
+    });
   };
 
   getCurrentQuestionNum = () => this.state.currentQuestionIndex;
-  getCurrentQuestionObj = () => this.state.questionValues[this.getCurrentQuestionNum()];
+  getCurrentQuestionObj = () =>
+    this.state.questionValues[this.getCurrentQuestionNum()];
   getUserAnswers = () => this.state.answerValues;
 
-  resetQuestionValues = () => this.setState({currentQuestionIndex: 0, answerValues: []});
+  resetQuestionValues = () =>
+    this.setState({ currentQuestionIndex: 0, answerValues: [] });
 
   // getBestMatches = (questionNum) => this.setState({bestMatches: questionNum});
 
@@ -68,5 +68,5 @@ class QuizProvider extends Component {
 
 export default QuizProvider;
 export const QuizContext = React.createContext();
-export const remoteServerURL = 'https://where-to.world/backend';
-// export const remoteServerURL = 'http://localhost:3002';
+// export const remoteServerURL = "https://where-to.world/backend";
+export const remoteServerURL = "http://localhost:3002";

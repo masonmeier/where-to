@@ -1,7 +1,7 @@
-import React, {useContext} from 'react';
-import {QuizContext} from '../QuizProvider';
-import getCountryData from '../SQLCall';
-import SubmitPage from './SubmitPage';
+import React, { useContext } from "react";
+import { QuizContext } from "components/QuizProvider";
+import getCountryData from "components/SQLCall";
+import SubmitPage from "components/pages/SubmitPage";
 
 function ResultsCalculator(props) {
   const [countriesArray, setCountriesArray] = React.useState([]);
@@ -13,13 +13,12 @@ function ResultsCalculator(props) {
   React.useEffect(() => {
     // get sql data on component mount
     getCountryData()
-      .then(countryData => setCountriesArray(countryData))
-      .catch(err => setError(err))
+      .then((countryData) => setCountriesArray(countryData))
+      .catch((err) => setError(err))
       .finally(() => setLoading(false));
   }, []);
 
   React.useEffect(() => {
-
     // when quizContext or countriesArray change, re-evaluate results
     // console.log('quiz data', quizContext);
     // console.log('sql data', countriesArray);
@@ -31,19 +30,21 @@ function ResultsCalculator(props) {
       return;
     }
 
-    const {questionValues} = quizContext;
+    const { questionValues } = quizContext;
 
     // map of country name -> country score
-    const scoreMap = new Map(countriesArray.map(countryData => [countryData.country, 0]));
+    const scoreMap = new Map(
+      countriesArray.map((countryData) => [countryData.country, 0])
+    );
 
     // increment(n) returns another function, which takes a Country Object from sql data & increments its score
-    const increment = n => ({country}) => {
+    const increment = (n) => ({ country }) => {
       scoreMap.set(country, scoreMap.get(country) + n);
     };
 
-    questionValues.forEach(({quality, value}) => {
+    questionValues.forEach(({ quality, value }) => {
       // array of numeric Country Values from sql data for this question
-      const countryValues = countriesArray.map(country => country[quality]);
+      const countryValues = countriesArray.map((country) => country[quality]);
       const min = Math.min(...countryValues);
       const max = Math.max(...countryValues);
 
@@ -74,15 +75,16 @@ function ResultsCalculator(props) {
     });
 
     // sort the countries by highest score
-    const sortedByScore = countriesArray.sort(({country: a}, {country: b}) => {
-      return scoreMap.get(b) - scoreMap.get(a);
-    });
+    const sortedByScore = countriesArray.sort(
+      ({ country: a }, { country: b }) => {
+        return scoreMap.get(b) - scoreMap.get(a);
+      }
+    );
 
     const resultCountryData = sortedByScore[0];
 
     quizContext.updateProviderResult(resultCountryData);
     setResult(resultCountryData);
-
   }, [quizContext, countriesArray]);
   if (loading) {
     return <div>Loading...</div>;
@@ -90,13 +92,11 @@ function ResultsCalculator(props) {
     return <div>An error occurred fetching the data.</div>;
   }
 
-
   return (
     <div className="resultsPage">
-      <SubmitPage result={result}/>
+      <SubmitPage result={result} />
     </div>
   );
 }
-
 
 export default ResultsCalculator;
