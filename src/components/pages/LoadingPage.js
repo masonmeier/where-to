@@ -6,7 +6,7 @@ export default function LoadingPage(props) {
       <div className="loading-image-resize">
         <img
           className="loading-gif"
-          src={require("components/pages/images/loadingscreen.gif")}
+          src={require("images/loadingscreen.gif")}
           alt="loading..."
         />
       </div>

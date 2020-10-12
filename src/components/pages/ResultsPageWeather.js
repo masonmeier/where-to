@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import LoadingPage from "components/pages/LoadingPage";
 import { QuizContext } from "components/QuizProvider";
-import ResultNavBar from "components/Structure/ResultNavBar";
-import NavBar from "components/Structure/NavBar";
-import "CSS/weatherPage.css";
+import ResultNavBar from "components/structure/ResultNavBar";
+import NavBar from "components/structure/NavBar";
+import "styles/weatherPage.css";
 import { remoteServerURL } from "components/QuizProvider";
-import Signature from "components/Structure/Signature";
+import Signature from "components/structure/Signature";
 
 class ResultsPageWeather extends Component {
   static contextType = QuizContext;

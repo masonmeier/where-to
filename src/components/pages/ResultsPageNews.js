@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import LoadingPage from "components/pages/LoadingPage";
 import { remoteServerURL } from "components/QuizProvider";
 import { QuizContext } from "components/QuizProvider";
-import "CSS/resultsPage.css";
-import NavBar from "components/Structure/NavBar";
-import ResultNavBar from "components/Structure/ResultNavBar";
+import "styles/resultsPage.css";
+import NavBar from "components/structure/NavBar";
+import ResultNavBar from "components/structure/ResultNavBar";
 
 class ResultsPageNews extends Component {
   static contextType = QuizContext;

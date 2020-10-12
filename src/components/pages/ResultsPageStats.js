@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import ResultNavBar from "components/Structure/ResultNavBar";
+import ResultNavBar from "components/structure/ResultNavBar";
 import { QuizContext } from "components/QuizProvider";
-import NavBar from "components/Structure/NavBar";
-import "CSS/resultsPage.css";
-import Signature from "components/Structure/Signature";
+import NavBar from "components/structure/NavBar";
+import "styles/resultsPage.css";
+import Signature from "components/structure/Signature";
 
 const ResultsPageStats = (props) => {
   const quizContext = useContext(QuizContext);
   const result = quizContext.resultCountry;
-  const countryFlag = require(`./images/flagssvg/${result.iso2}.svg`);
+  const countryFlag = require(`images/flagssvg/${result.iso2}.svg`);
   return (
     <div className="results-page">
       <NavBar />

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useHistory } from "react-router-dom";
 import { QuizContext } from "components/QuizProvider";
-import titleimage from "components/pages/images/lpimages/title.png";
+import titleimage from "images/lpimages/title.png";
 
 const NavBar = (props) => {
   const quizContext = useContext(QuizContext);

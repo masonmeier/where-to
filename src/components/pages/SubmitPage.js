@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import LoadingPage from "components/pages/LoadingPage";
-import NavBar from "components/Structure/NavBar";
+import NavBar from "components/structure/NavBar";
 import ResultsForm from "components/pages/ResultsForm";
 
 const SubmitPage = (props) => {

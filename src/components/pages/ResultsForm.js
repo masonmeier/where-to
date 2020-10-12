@@ -1,9 +1,9 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React from "react";
-import "CSS/formPage.css";
+import "styles/formPage.css";
 import { QuizContext } from "components/QuizProvider";
-import Signature from "components/Structure/Signature";
+import Signature from "components/structure/Signature";
 import { remoteServerURL } from "components/QuizProvider";
 
 class ResultsForm extends React.Component {
@@ -106,7 +106,7 @@ class ResultsForm extends React.Component {
           <img
             className="submit-image"
             alt="submission"
-            src={require("components/pages/images/lpimages/7561-planet2.gif")}
+            src={require("images/lpimages/7561-planet2.gif")}
           />
         </div>
         <Signature />

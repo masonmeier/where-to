@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { QuizContext } from "components/QuizProvider";
-import economic from "components/pages/images/QuestionIcons/economic.png";
-import education from "components/pages/images/QuestionIcons/education.png";
-import environment from "components/pages/images/QuestionIcons/environment.png";
-import political from "components/pages/images/QuestionIcons/political.png";
-import social from "components/pages/images/QuestionIcons/social.png";
-import NavBar from "components/Structure/NavBar";
+import economic from "images/QuestionIcons/economic.png";
+import education from "images/QuestionIcons/education.png";
+import environment from "images/QuestionIcons/environment.png";
+import political from "images/QuestionIcons/political.png";
+import social from "images/QuestionIcons/social.png";
+import NavBar from "components/structure/NavBar";
 import UserInput from "components/pages/questions/Input";
-import "CSS/webflow.css";
-import "CSS/normalize.css";
+import "styles/webflow.css";
+import "styles/normalize.css";
 
 const categoryToImage = {
   economic: economic,

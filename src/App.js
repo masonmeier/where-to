@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import QuizProvider from "components/QuizProvider";
-import Routes from "components/Structure/Routes";
+import Routes from "components/structure/Routes";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "CSS/landingPage.css";
+import "styles/landingPage.css";
 
 export default class Title extends Component {
   render() {
@@ -8,7 +8,7 @@ export default class Title extends Component {
         <img
           className="titleImage"
           alt="title"
-          src={require("components/pages/images/title.png")}
+          src={require("images/title.png")}
         />
       </div>
     );

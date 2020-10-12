@@ -1,8 +1,8 @@
 import React from "react";
-import "CSS/landingPage.css";
+import "styles/landingPage.css";
 import { useHistory } from "react-router-dom";
-import NavBar from "components/Structure/NavBar";
-import planeWindow from "components/pages/images/lpimages/10398-plane-window.gif";
+import NavBar from "components/structure/NavBar";
+import planeWindow from "images/lpimages/10398-plane-window.gif";
 
 function LandingPage() {
   const history = useHistory();
