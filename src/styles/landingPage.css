@@ -79,7 +79,7 @@ li {
     display: block;
     padding-top: 5%;
     padding-bottom: 1%;
-    padding-left: 25%;
+    padding-left: 15%;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -106,12 +106,12 @@ li {
     flex: 1;
 }
 
-.hero-image-mask {
+.lp-hero-image-mask {
     width: 40%;
     margin-left: 0;
 }
 
-.hero-image {
+.lp-hero-image {
     width: 100%;
     height: 100%;
     -webkit-box-flex: 0;
@@ -170,7 +170,7 @@ li {
 }
 
 @media screen and (max-width: 991px) {
-    .hero-image-mask {
+    .lp-hero-image-mask {
         display: inline-block;
     }
 
@@ -219,7 +219,7 @@ li {
         flex-direction: column;
     }
 
-    .hero-image-mask {
+    .lp-hero-image-mask {
         margin-right: 0;
         margin-left: 0;
         -webkit-box-ordinal-group: 0;

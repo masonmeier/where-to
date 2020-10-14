@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { useHistory } from "react-router-dom";
-import { QuizContext } from "providers/QuizProvider";
-import titleimage from "images/lpimages/title.png";
+import React, {useContext} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useHistory} from 'react-router-dom';
+import {QuizContext} from 'providers/QuizProvider';
+import titleimage from 'images/lpimages/title.png';
 
 const NavBar = (props) => {
   const quizContext = useContext(QuizContext);
@@ -10,7 +10,7 @@ const NavBar = (props) => {
   let history = useHistory();
   const restart = () => {
     quizReset();
-    history.push("/");
+    history.push('/');
   };
 
   return (
@@ -28,7 +28,7 @@ const NavBar = (props) => {
               />
             </li>
             <li>
-              <p className="nav-link">Contact</p>
+              <a href="http://masonmeier.info" className="nav-link">Contact</a>
             </li>
             <li className="restart-container">
               <p onClick={restart} className="button w-button">

@@ -177,7 +177,7 @@ const questionValues = [
     whyIsThisImportText: `If you don't like the heat, you will most likely disagree with this question.`,
     questionNumber: '11 of 26',
     questionText: 'You want to live where it is hot.',
-    questionFact: '',
+    questionFact: 'Burkina Faso is the hottest nation on earth with an annual average temperature of 82.85°F (28.25°C).',
     quality: 'most_temperate_nations',
     inputType: 'range',
     inputReference: 'qSlider',

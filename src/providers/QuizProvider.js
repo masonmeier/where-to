@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import questionValues from "providers/questionValues";
+import React, {Component} from 'react';
+import questionValues from 'providers/questionValues';
 
 class QuizProvider extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class QuizProvider extends Component {
 
     this.state = {
       getCurrentQuestionNum: this.getCurrentQuestionNum,
-      getCurrentQuestionObj: this.getCurrentQuestionObj,
+      getCurrentQuestion: this.getCurrentQuestion,
       setQVal: this.setQVal,
       setQBody: this.setQBody,
       getUserAnswers: this.getUserAnswers,
@@ -29,7 +29,7 @@ class QuizProvider extends Component {
 
   updateProviderResult = (countryObject) => {
     //this function takes in the country object and saves it to provider state
-    this.setState({ resultCountry: countryObject });
+    this.setState({resultCountry: countryObject});
   };
   //add a thing that allows us to compare peoples current country to their desired country.
 
@@ -38,7 +38,8 @@ class QuizProvider extends Component {
   setQVal = (qVal) => {
     const answerVal = this.state.answerValues;
     answerVal.push(qVal);
-    this.setState({ answerValues: answerVal }, () => {});
+    this.setState({answerValues: answerVal}, () => {
+    });
   };
 
   setQBody = () => {
@@ -48,12 +49,12 @@ class QuizProvider extends Component {
   };
 
   getCurrentQuestionNum = () => this.state.currentQuestionIndex;
-  getCurrentQuestionObj = () =>
+  getCurrentQuestion = () =>
     this.state.questionValues[this.getCurrentQuestionNum()];
   getUserAnswers = () => this.state.answerValues;
 
   resetQuestionValues = () =>
-    this.setState({ currentQuestionIndex: 0, answerValues: [] });
+    this.setState({currentQuestionIndex: 0, answerValues: []});
 
   // getBestMatches = (questionNum) => this.setState({bestMatches: questionNum});
 
@@ -69,5 +70,5 @@ class QuizProvider extends Component {
 export default QuizProvider;
 export const QuizContext = React.createContext();
 // export const remoteServerURL = "https://where-to.world/backend";
-export const remoteServerURL = "http://localhost:3002";
-console.log(process.env.NODE_ENV, "node env test");
+export const remoteServerURL = 'http://localhost:3002';
+console.log(process.env.NODE_ENV, 'node env test');

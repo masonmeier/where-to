@@ -1,18 +1,18 @@
-import React from "react";
-import "styles/landingPage.css";
-import { useHistory } from "react-router-dom";
-import NavBar from "components/structure/NavBar";
-import planeWindow from "images/lpimages/10398-plane-window.gif";
+import React from 'react';
+import 'styles/landingPage.css';
+import {useHistory} from 'react-router-dom';
+import NavBar from 'components/structure/NavBar';
+import planeWindow from 'images/lpimages/10398-plane-window.gif';
 
 function LandingPage() {
   const history = useHistory();
   const startQuiz = () => {
-    history.push("/questions");
+    history.push('/questions');
   };
 
   return (
     <div className="landing-Page">
-      <NavBar />
+      <NavBar/>
       <div className="w-row">
         <div className="landing-column">
           <header
@@ -25,7 +25,7 @@ function LandingPage() {
                 <h1 className="heading">Have you ever wondered...</h1>
                 <p className="paragraph">
                   Where in the world you would actually fit in?
-                  <br />‍<br />
+                  <br/>‍<br/>
                   Where-To is an application that tests your preferences against
                   dozens of international ranking metrics to determine where you
                   would actually enjoy living!
@@ -34,12 +34,12 @@ function LandingPage() {
                   Start
                 </button>
               </div>
-              <div className="hero-image-mask">
+              <div className="lp-hero-image-mask">
                 <img
                   src={planeWindow}
                   sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, 39vw"
                   alt="moving title"
-                  className="hero-image"
+                  className="lp-hero-image"
                 />
               </div>
             </div>

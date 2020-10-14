@@ -1,5 +1,9 @@
 .hero-2 {
-    padding-right: 10%;
+    width: 100%;
+}
+
+#hero {
+    margin: 0;
 }
 
 
@@ -36,11 +40,12 @@
 }
 
 .hero-image-mask {
-    min-width: 25%;
+    width: 100%;
+    text-align: center;
 }
 
 .primary-question-body {
-    min-width: 70%;
+    width: 100%;
     text-align: center;
 }
 
@@ -67,6 +72,11 @@
 
 .w-icon-file-upload-icon:before {
     content: "\e903";
+}
+
+.question-image {
+    display: inline-block;
+    width: 40%;
 }
 
 * {
@@ -97,6 +107,11 @@ img {
 
 html.w-mod-touch * {
     background-attachment: scroll !important;
+}
+
+.question-explanation {
+    margin-left: 10%;
+    border-left: 1px solid black;
 }
 
 .w-block {
@@ -272,10 +287,10 @@ label {
 }
 
 .w-col-9 {
-    margin-top: 0;
-    padding-top: 2%;
-    width: 65%;
-    border-left: 1px solid black;
+    margin-top: 5%;
+    width: 50%;
+    padding-left: 10%;
+
 }
 
 .w-col-10 {
@@ -291,7 +306,7 @@ label {
 }
 
 .userSlider {
-    width: 70%;
+    width: 100%;
     margin-top: 2%;
     margin-bottom: 5%;
 }
@@ -322,14 +337,15 @@ label {
 .question-text {
     margin-bottom: 10%;
     display: inline-block;
-    width: 70%;
+    width: 100%;
 }
 
 .question-fact {
     text-align: center;
     display: inline-block;
-    width: 70%;
+    width: 100%;
     margin-top: 5%;
+    height: 20%;
 }
 
 .nav-logo {
@@ -339,7 +355,7 @@ label {
 
 @media screen and (max-width: 991px) {
     .w-col-9 {
-        border-left: none;
+        border-right: none;
     }
 
     .nav-logo {
@@ -353,11 +369,6 @@ label {
     .hero-2 {
         padding-right: 0;
     }
-
-    .question-image {
-        width: 40%;
-    }
-
 
     .w-hidden-main {
         display: inherit !important;
@@ -423,6 +434,16 @@ label {
 }
 
 @media screen and (max-width: 767px) {
+    .question-explanation {
+        margin-left: 0;
+        border-left: none;
+    }
+
+    .question-interaction {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .w-row {
         margin-left: 0;
         margin-right: 0;
@@ -515,7 +536,7 @@ label {
 
 @media screen and (max-width: 479px) {
     .hero-image-mask {
-        width: 60%;
+        width: 100%;
     }
 
     .w-container {

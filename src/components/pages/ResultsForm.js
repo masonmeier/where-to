@@ -1,10 +1,10 @@
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import React from "react";
-import "styles/formPage.css";
-import { QuizContext } from "providers/QuizProvider";
-import Signature from "components/structure/Signature";
-import { remoteServerURL } from "constants/index";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import React from 'react';
+import 'styles/formPage.css';
+import {QuizContext} from 'providers/QuizProvider';
+import Signature from 'components/structure/Signature';
+import {remoteServerURL} from 'constants/index';
 
 class ResultsForm extends React.Component {
   static contextType = QuizContext;
@@ -16,24 +16,24 @@ class ResultsForm extends React.Component {
 
       checked: true,
       setChecked: true,
-      guessInput: "",
-      nameText: "",
+      guessInput: '',
+      nameText: '',
     };
     this.setCheck = this.setCheck.bind(this);
   }
 
   setCheck() {
-    this.setState({ checked: !this.state.checked });
+    this.setState({checked: !this.state.checked});
   }
 
   //to-do: create user data submission
 
   submitUserData = () => {
     const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        title: "User Input Submission",
+        title: 'User Input Submission',
         guessInput: this.state.guessInput,
         nameText: this.state.nameText,
       }),
@@ -56,13 +56,13 @@ class ResultsForm extends React.Component {
         <div className="form-holder">
           <Form className="submission-form">
             <Form.Group className="name-submission-group">
-              <Form.Label>What's your name?</Form.Label>
+              <Form.Label>Where are you from?</Form.Label>
               <Form.Control
                 onChange={(e) => {
-                  this.setState({ nameText: e.target.value });
+                  this.setState({nameText: e.target.value});
                 }}
                 type="text"
-                placeholder="Enter Your Name"
+                placeholder="Enter Your Nation or State"
               />
             </Form.Group>
 
@@ -72,7 +72,7 @@ class ResultsForm extends React.Component {
                 type="text"
                 placeholder="Your Guess"
                 onChange={(e) => {
-                  this.setState({ guessInput: e.target.value });
+                  this.setState({guessInput: e.target.value});
                 }}
               />
             </Form.Group>
@@ -89,7 +89,7 @@ class ResultsForm extends React.Component {
               onClick={() => {
                 this.state.loadPage();
                 this.submitUserData();
-                console.log(remoteServerURL, "remote server url check");
+                console.log(remoteServerURL, 'remote server url check');
               }}
               disabled={
                 this.state.guessInput.length === 0 ||
@@ -106,10 +106,10 @@ class ResultsForm extends React.Component {
           <img
             className="submit-image"
             alt="submission"
-            src={require("images/lpimages/7561-planet2.gif")}
+            src={require('images/lpimages/7561-planet2.gif')}
           />
         </div>
-        <Signature />
+        <Signature/>
       </div>
     );
   }

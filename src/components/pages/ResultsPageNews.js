@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import LoadingPage from "components/pages/LoadingPage";
-import { remoteServerURL } from "constants/index";
-import { QuizContext } from "providers/QuizProvider";
-import "styles/resultsPage.css";
-import NavBar from "components/structure/NavBar";
-import ResultNavBar from "components/structure/ResultNavBar";
+import React, {Component} from 'react';
+import LoadingPage from 'components/pages/LoadingPage';
+import {remoteServerURL} from 'constants/index';
+import {QuizContext} from 'providers/QuizProvider';
+import 'styles/resultsPage.css';
+import NavBar from 'components/structure/NavBar';
+import ResultNavBar from 'components/structure/ResultNavBar';
 
 class ResultsPageNews extends Component {
   static contextType = QuizContext;
@@ -16,17 +16,16 @@ class ResultsPageNews extends Component {
       title: null,
       urlToImage: null,
       url: null,
-      country: "england",
+      country: null,
     };
   }
 
   componentDidMount() {
-    console.log(this.context);
     this.setState({
       country: this.context.resultCountry.country,
     });
 
-    fetch(`${remoteServerURL}/news?q=` + this.state.country)
+    fetch(`${remoteServerURL}/news?q=` + this.context.resultCountry.country)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -36,7 +35,8 @@ class ResultsPageNews extends Component {
           throw error;
         }
       )
-      .then((json) => this.setState({ loading: false, data: json }));
+      .then((json) => this.setState({loading: false, data: json}))
+      .catch(console.log);
   }
 
   renderList = (data) => {
@@ -73,12 +73,12 @@ class ResultsPageNews extends Component {
   };
 
   render() {
-    const { loading, data } = this.state;
+    const {loading, data} = this.state;
     return (
       <div>
-        <NavBar />
-        <ResultNavBar />
-        {loading ? <LoadingPage /> : this.renderList(data)}
+        <NavBar/>
+        <ResultNavBar/>
+        {loading ? <LoadingPage/> : this.renderList(data)}
       </div>
     );
   }
