@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Structure/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Structure/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ResultsPageNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/QuestionStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/lpimages/title.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/lpimages/title.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/QuizProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/questionValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/questionValues.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/landingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/landingPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/webflow.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/webflow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/lpimages/title.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/title.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +42,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src" />
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
-      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minip\Desktop\where-to-project\where-to-react-client\where-to-client\src\components\images" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components" />
       <recent name="C:\Users\minip\Desktop\where-to-route-structure\where-to-routes\src\components\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\public" />
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src" />
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages" />
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\CSS" />
+      <recent name="C:\Users\minip\Desktop\Code\where-to-project\where-to-react-client\where-to-client\src\components\pages\images" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.NewsApiCall.js">
@@ -181,6 +170,7 @@
       <workItem from="1602628458525" duration="10611000" />
       <workItem from="1602702846909" duration="18000" />
       <workItem from="1602714517016" duration="439000" />
+      <workItem from="1602716220185" duration="2575000" />
     </task>
     <servers />
   </component>
