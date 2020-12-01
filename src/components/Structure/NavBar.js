@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {useHistory} from 'react-router-dom';
 import {QuizContext} from 'providers/QuizProvider';
 import titleimage from 'images/lpimages/title.png';
@@ -27,10 +26,10 @@ const NavBar = (props) => {
                 className="nav-logo"
               />
             </li>
-            <li>
-              <a href="http://masonmeier.info" className="nav-link">Contact</a>
+            <li className="nav-header-item">
+              <a href="http://masonmeier.info" className="button w-button">Contact</a>
             </li>
-            <li className="restart-container">
+            <li className="nav-header-item">
               <p onClick={restart} className="button w-button">
                 Restart Quiz
               </p>

@@ -27,6 +27,12 @@
     height: 100px !important;
 }
 
+.nav-link {
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
 #nav {
     height: 100px;
 }
@@ -142,6 +148,7 @@ html.w-mod-touch * {
     text-decoration: none;
     cursor: pointer;
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 .next {
@@ -348,9 +355,14 @@ label {
     height: 20%;
 }
 
+.nav-header-item {
+    margin: 5px;
+}
+
 .nav-logo {
     margin-left: 0;
 }
+
 
 
 @media screen and (max-width: 991px) {

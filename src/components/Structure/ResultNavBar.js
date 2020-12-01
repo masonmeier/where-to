@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Nav from "react-bootstrap/Nav";
 import { useHistory } from "react-router-dom";
 import { QuizContext } from "providers/QuizProvider";
 
@@ -19,32 +18,34 @@ const ResultNavBar = (props) => {
   const isoTwo = quizContext.resultCountry.iso2;
 
   return (
-    <Nav fill variant="tabs" defaultActiveKey="/results/stats">
-      <Nav.Item className="resultNavLink">
-        <Nav.Link className="resultNavLinkText" onClick={viewStats}>
+    <nav className="nav-header">
+      <button className="result-nav-link" onClick={viewStats}>
+        <h2 className="resultNavLinkText">
           Statistics
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item className="resultNavLink">
-        <Nav.Link className="resultNavLinkText" onClick={viewNews}>
+        </h2>
+      </button>
+      <button className="result-nav-link" onClick={viewNews}>
+        <h2 className="resultNavLinkText">
           News
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item className="resultNavLink">
-        <Nav.Link className="resultNavLinkText" onClick={viewWeather}>
+        </h2>
+      </button>
+      <button className="result-nav-link" onClick={viewWeather}>
+        <h2 className="resultNavLinkText">
           Weather
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item className="resultNavLink">
-        <a
-          target={capital}
-          className="resultNavLinkText nav-link"
-          href={`https://www.google.com/maps/dir/Current+Location/${capital}%20${isoTwo}`}
-        >
-          Flights
-        </a>
-      </Nav.Item>
-    </Nav>
+        </h2>
+      </button>
+      {/*<Nav.Item className="resultNavLink">*/}
+      {/*  <Nav.Link className="resultNavLinkText" onClick={viewNews}>*/}
+      {/*    News*/}
+      {/*  </Nav.Link>*/}
+      {/*</Nav.Item>*/}
+      {/*<Nav.Item className="resultNavLink">*/}
+      {/*  <Nav.Link className="resultNavLinkText" onClick={viewWeather}>*/}
+      {/*    Weather*/}
+      {/*  </Nav.Link>*/}
+      {/*</Nav.Item>*/}
+      {/*<Nav.Item className="resultNavLink">*/}
+    </nav>
   );
 };
 
