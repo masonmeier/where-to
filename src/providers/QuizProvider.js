@@ -56,7 +56,6 @@ class QuizProvider extends Component {
   resetQuestionValues = () =>
     this.setState({currentQuestionIndex: 0, answerValues: []});
 
-  // getBestMatches = (questionNum) => this.setState({bestMatches: questionNum});
 
   render() {
     return (
@@ -69,6 +68,4 @@ class QuizProvider extends Component {
 
 export default QuizProvider;
 export const QuizContext = React.createContext();
-// export const remoteServerURL = "https://where-to.world/backend";
 export const remoteServerURL = 'http://localhost:3002';
-console.log(process.env.NODE_ENV, 'node env test');
