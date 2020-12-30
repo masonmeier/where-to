@@ -26,6 +26,16 @@ D. Post to the user SQL database.
 
 *********End Summary*********
 
+****API OVERVIEW****
+/api
+├── /
+│   └── GET
+│       ├── /
+│       ├── /weather
+│       ├── /news
+│   └── POST
+│       ├── /submit
+****END API OVERVIEW****
 
 Technology Used:
 HTML
