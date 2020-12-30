@@ -24,6 +24,7 @@ class QuizProvider extends Component {
       currentQuestionIndex: 0,
       resultCountry: null,
       bestMatches: null,
+      ...props,
     };
   }
 

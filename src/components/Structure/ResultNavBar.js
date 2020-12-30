@@ -1,21 +1,18 @@
-import React, { useContext } from "react";
-import { useHistory } from "react-router-dom";
-import { QuizContext } from "providers/QuizProvider";
+import React from 'react';
+import {useHistory} from 'react-router-dom';
+
 
 const ResultNavBar = (props) => {
-  const quizContext = useContext(QuizContext);
   let history = useHistory();
   const viewStats = () => {
-    history.push("/results/stats");
+    history.push('/results/stats');
   };
   const viewNews = () => {
-    history.push("/results/news");
+    history.push('/results/news');
   };
   const viewWeather = () => {
-    history.push("/results/weather");
+    history.push('/results/weather');
   };
-  const capital = quizContext.resultCountry.capital_city;
-  const isoTwo = quizContext.resultCountry.iso2;
 
   return (
     <nav className="nav-header">
@@ -34,17 +31,6 @@ const ResultNavBar = (props) => {
           Weather
         </h2>
       </button>
-      {/*<Nav.Item className="resultNavLink">*/}
-      {/*  <Nav.Link className="resultNavLinkText" onClick={viewNews}>*/}
-      {/*    News*/}
-      {/*  </Nav.Link>*/}
-      {/*</Nav.Item>*/}
-      {/*<Nav.Item className="resultNavLink">*/}
-      {/*  <Nav.Link className="resultNavLinkText" onClick={viewWeather}>*/}
-      {/*    Weather*/}
-      {/*  </Nav.Link>*/}
-      {/*</Nav.Item>*/}
-      {/*<Nav.Item className="resultNavLink">*/}
     </nav>
   );
 };

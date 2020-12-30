@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51f5ede-f664-45c7-afb4-40b002ce0a93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/QuizProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/QuizProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/user-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/user-input.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +25,12 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/lpimages" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -38,6 +45,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,6 +81,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -171,11 +180,15 @@
       <workItem from="1602714517016" duration="439000" />
       <workItem from="1602716220185" duration="3842000" />
       <workItem from="1602795228158" duration="1381000" />
+      <workItem from="1608789644639" duration="1185000" />
+      <workItem from="1609141969470" duration="529000" />
+      <workItem from="1609212840614" duration="1806000" />
+      <workItem from="1609275898021" duration="5783000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -184,98 +197,50 @@
     <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601680481725">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1599709756397" />
     <state x="725" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1601680481725" />
     <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600918829948">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
-    <state x="690" y="278" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1595979787048" />
     <state x="2472" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600918829948" />
-    <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596145900042">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="1183" y="363" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596145900042" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1601683102926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595030417322" />
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600049846127" />
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1601683102926" />
     <state width="1899" height="349" key="GridCell.Tab.0.bottom" timestamp="1602629503556">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029339" />
-    <state width="996" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
-    <state width="1515" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
     <state width="1899" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1602629503556" />
     <state width="1899" height="349" key="GridCell.Tab.0.center" timestamp="1602629503555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state width="996" height="349" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
-    <state width="1515" height="259" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
     <state width="1899" height="349" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1602629503555" />
     <state width="1899" height="349" key="GridCell.Tab.0.left" timestamp="1602629503555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state width="996" height="349" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
-    <state width="1515" height="259" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
     <state width="1899" height="349" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1602629503555" />
     <state width="1899" height="349" key="GridCell.Tab.0.right" timestamp="1602629503555">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595546029338" />
-    <state width="996" height="349" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1596583261994" />
-    <state width="1515" height="259" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577650574" />
     <state width="1899" height="349" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1602629503555" />
-    <state x="461" y="150" key="SettingsEditor" timestamp="1597094002964">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="150" key="SettingsEditor/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597094002964" />
-    <state x="2289" y="119" key="SettingsEditor/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596577245446" />
-    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594253289362" />
-    <state x="1116" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1597277385945">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="1116" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597277385945" />
-    <state x="747" y="194" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595885245603">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="747" y="194" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595885245603" />
-    <state x="2497" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600641995212">
-      <screen x="1920" y="0" width="1536" height="834" />
-    </state>
-    <state x="2497" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600641995212" />
     <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1" timestamp="1600900841633">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
-    <state x="1914" y="0" width="781" height="840" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600637163464" />
     <state x="1914" y="0" width="781" height="840" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600900841633" />
-    <state x="665" y="0" width="1150" height="1050" key="find.popup" timestamp="1602630230302">
+    <state x="770" y="0" width="1150" height="1050" key="find.popup" timestamp="1609288127357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="770" y="0" width="1150" height="1050" key="find.popup/0.0.1920.1050/-1920.0.1920.1080@0.0.1920.1050" timestamp="1609288127357" />
     <state x="346" y="-23" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601427922204" />
-    <state x="2106" y="163" width="920" height="603" key="find.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1599260132694" />
     <state x="665" y="0" width="1150" height="1050" key="find.popup/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1602630230302" />
-    <state x="489" y="167" width="627" height="568" key="find.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594345712521" />
     <state x="346" y="-24" width="1150" height="1080" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601517817264" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1596665228476">
-      <screen x="1920" y="0" width="1536" height="834" />
-    </state>
-    <state width="600" height="440" key="javadoc.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596665228476" />
     <state x="2345" y="189" key="run.anything.popup" timestamp="1600738975554">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
-    <state x="531" y="238" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1597277725728" />
     <state x="2345" y="189" key="run.anything.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600738975554" />
     <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup" timestamp="1600927784861">
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
-    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595543830027" />
-    <state x="623" y="228" width="840" height="661" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600638060090" />
     <state x="2418" y="181" width="672" height="525" key="search.everywhere.popup/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1600927784861" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.7.1536.864@0.0.1920.1080" timestamp="1594259898428" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
